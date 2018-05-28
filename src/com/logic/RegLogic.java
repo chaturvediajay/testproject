@@ -19,6 +19,7 @@ import com.model.HibernateUtil;
 import com.model.LoginSession;
 import com.model.Registration;
 import com.model.UpdateAccount;
+import com.scope.AbstractClass;
 import com.scope.MailHtml;
 import com.scope.SaltedMD5Example;
 import com.scope.SendEmail;
@@ -171,7 +172,7 @@ public class RegLogic {
 		return mi;
 	}
 
-	public static boolean forgot_password_email(String email) {
+	public static boolean forgot_password_email(String email, String url) {
 
 		boolean bol = false;
 		Session session = HibernateUtil.getSessionFactory().openSession();
@@ -211,10 +212,9 @@ public class RegLogic {
 				String str = "<h3>Welcome " + "</h3>"
 						+ "<p>&nbsp; &nbsp; &nbsp; &nbsp; please activate your account following link.... &nbsp;</p>"
 						+ "<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;"
-						+ "<a href='http://" + "url" + "/activation?code=" + encyptedcode
-						+ "'>Activation Account</a>(expire after 48 hours)</p>"
-						+ "<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>" + "<p style=\"text-align: center;\">"
-						+ "@chouhanrugs2018-Team</p>";
+						+ "<a href='http://" + url + "/forgot_password_email?ctx=change&code=" + encyptedcode
+						+ "'>Change Password</a>(expire after 48 hours)</p>" + "<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>"
+						+ "<p style=\"text-align: center;\">" + "@chouhanrugs2018-Team</p>";
 				SendEmail.send(str, "forgot password", email);
 				bol = true;
 			} else
@@ -231,6 +231,51 @@ public class RegLogic {
 		return bol;
 	}
 
+	public static boolean change_password(HttpServletRequest request) {
+		boolean bol = false;
+		String ctx = request.getParameter("ctx");
+		String code = request.getParameter("code");
+		String password = request.getParameter("password");
+		String confirmPwd = request.getParameter("confirmPwd");
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Transaction tx = null;
+		try {
+			if (ctx.equals("change") & password != null & confirmPwd != null & password.equals(confirmPwd)
+					& code != null) {
+				tx = session.beginTransaction();
+				String sql_query = "update registration r,(SELECT * FROM updateaccount where code='" + code + "') src ,"
+						+ " updateaccount ua" + " SET r.pswd = '" + password
+						+ "',ua.status=1 where r.uid=src.uid and src.status=0";
+				Query query = session.createSQLQuery(sql_query);
+				bol = query.executeUpdate() > 0 ? true : false;
+				System.out.println("num  " + sql_query);
+				tx.commit();
+			}
+
+		} catch (Exception ex) {
+			if (tx != null)
+				session.getTransaction().rollback();
+
+		} finally {
+			if (session != null)
+				session.close();
+		}
+
+		return bol;
+	}
+	public static int reg_rowCount(String categories,String param){
+		String sql_query="";
+		switch (categories) {
+		case "update_account_code":
+			sql_query="select count(*)  from updateaccount where code='"+param+"' and status=0";
+			break;
+
+		default:
+			break;
+		}
+		return AbstractClass.row_Count(sql_query);
+		
+	}
 	private static int rendomNumber() {
 		Random rn = new Random();
 		int range = 99999999;
@@ -239,9 +284,9 @@ public class RegLogic {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		forgot_password_email("kr.maheshngh@gmail.com");
-
+		System.out.println(reg_rowCount("update_account_code"));
+		
+		
 	}
 
 }

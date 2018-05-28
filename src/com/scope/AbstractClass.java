@@ -9,6 +9,7 @@ import java.util.Map.Entry;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.derby.tools.sysinfo;
 import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
@@ -324,6 +325,7 @@ public class AbstractClass {
 		}
 		return list;
 	}
+
 	public static String checkImageUrl(HttpServletRequest request, String url) {
 		String[] aStr = url.split(",");
 		System.out.println("array " + aStr);
@@ -338,6 +340,24 @@ public class AbstractClass {
 			}
 		}
 		return rurl;
+	}
+
+	public static int row_Count(String str) {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		try {
+			session.beginTransaction();
+			Query query = session.createSQLQuery(str);
+			System.out.println(query);
+			List listResult = query.list();
+			Number nu = (Number) listResult.get(0);
+			return nu.intValue();
+		} catch (Exception ex) {
+			System.out.println(ex.toString());
+
+		} finally {
+			session.clear();
+		}
+		return 0;
 	}
 
 }

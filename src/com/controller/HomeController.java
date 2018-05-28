@@ -617,7 +617,18 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = { "/forgot_password_email" }, method = { RequestMethod.GET })
-	public String getforgot_password() {
+	public String getforgot_password(HttpServletRequest request, ModelMap model) {
+		String ctx = request.getParameter("ctx");
+		if (ctx != null) {
+			if (ctx.equals("recover"))
+				model.addAttribute("trace", 1);
+			else if (ctx.equals("change") & request.getParameter("code") != null)
+				model.addAttribute("trace", RegLogic.reg_rowCount("update_account_code",request.getParameter("code")));
+			else
+				model.addAttribute("trace", 0);
+		} else
+			model.addAttribute("trace", 0);
+
 		return "forgot_password_email";
 	}
 
@@ -625,13 +636,19 @@ public class HomeController {
 	public String postforgot_password(HttpServletRequest request, ModelMap model) {
 		model.addAttribute("msg", "password not change");
 		String email = request.getParameter("email");
-		String token = request.getParameter("token");
 		String ctx = request.getParameter("ctx");
 		if (ctx != null) {
-			if (RegLogic.forgot_password_email(email) & request.getSession().getAttribute("forgot_pswd").equals(token))
-				model.addAttribute("msg", "check your email account.(" + email + ")");
-			else
-				model.addAttribute("msg", "incorrect request found.(" + email + ")");
+			if (ctx.equals("recover")) {
+				String token = request.getParameter("token");
+				if (RegLogic.forgot_password_email(email, getLocalHost(request))
+						& request.getSession().getAttribute("forgot_pswd").equals(token))
+					model.addAttribute("msg", "check your email account.(" + email + ")");
+				else
+					model.addAttribute("msg", "incorrect request found.(" + email + ")");
+			} else if (ctx.equals("change")) {
+				model.addAttribute("msg", RegLogic.change_password(request) ? "password change sucessfully."
+						: "incorrect request found, please write a mail.");
+			}
 		}
 		return "forgot_password_email";
 	}
