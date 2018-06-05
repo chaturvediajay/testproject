@@ -52,29 +52,21 @@ label.error {
 					</div>	
 					<div class="row">
 							<div class="col-sm-6 form-group">
-								<label>State</label>
-								<select class="form-control" name="sState" >
-								<option value="">Select</option>
-								<option selected="selected" value="rajasthan">Rajasthan</option>
-									</select>
+								<label> State </label>
+								<input name="sState" value="${empty sessionScope.ship.sState?'':sessionScope.ship.sState}" type="text" placeholder="Enter State" class="form-control">
 							</div>
 							<div class="col-sm-6 form-group">
-								<label>City</label>
-									<select class="form-control" name="sCity" >
-									<option value="">Select</option>
-									<option selected="selected" value="jaipur">jaipur</option>
-									</select>
+								<label> City </label>
+								<input name="sCity" value="${empty sessionScope.ship.sCity?'':sessionScope.ship.sCity}" type="text" placeholder="Enter City" class="form-control">
 							</div>
-					</div>	
+						</div>
 					<div class="row">
 							<div class="col-sm-6 form-group">
-								<label>Pincode</label>
-								<select class="form-control" name="sPincode" >
-								<option value="">Select</option>
-								<option selected="selected" value="302020">302020</option>
-									</select>
+								<label>PIN Number</label>
+								<input name="sPincode" value="${empty sessionScope.ship.sPincode?'':sessionScope.ship.sPincode}" type="text" placeholder="Enter PIN No." class="form-control">
 							</div>
-					</div>	
+					</div>
+					
 					   
                 <!-- /.col -->
                 <div class="col-xs-4">
@@ -101,17 +93,24 @@ label.error {
 			return value.indexOf(" ") < 0 && value != "";
 		}, "No space please and don't leave it empty");
 		var ruleCall ={ sStreet : "required",sAddress: "required",
-				sName : { required : true, lettersonly : true},  pswd : { required : true, minlength : 5 }, 
-
-cpswd : { required : true, minlength : 5, equalTo : "#pswd" }, 
-sMobile : { required : true, minlength : 10, maxlength : 10, number : true },
-mobile : { required : true, minlength : 10, maxlength : 10, number : true },  };
+				sName : { required : true, lettersonly : true}, 
+				pswd : { required : true, minlength : 5 }, 
+				cpswd : { required : true, minlength : 5, equalTo : "#pswd" }, 
+				sMobile : { required : true, minlength : 10, maxlength : 10, number : true },
+				mobile : { required : true, minlength : 10, maxlength : 10, number : true },
+				sState : { required : true, lettersonly : true}, 
+				sCity : { required : true, lettersonly : true},
+				sPincode : { required : true, minlength : 6, maxlength : 6, number : true },};
 		var msg ={
 				sName : "Please enter Shipping Name", 
 				sStreet : "Enter Street Address!",
 				sAddress : "Enter Shipping Address",  
 				sMobile : { required : "Please enter shipping contact", minlength : " contact must be at least 10 digit", maxlength : " contact must be at least 10 digit", },
-				sPincode : { required : "Please provide a your mobile number" }, };  
+				sPincode : { required : "Please provide a your mobile number" },
+				
+				sState : { required : "Please Enter State" }, 
+				sCity : { required : "Please Enter your city" }, 
+				sPincode : { required : "Please provide a your PIN No." }, };  
 		validatorAjax("#reg", ruleCall, msg, 0);
 	
 	

@@ -11,7 +11,6 @@
 							 <a href="${pageContext.request.contextPath}/single?pkey=${fp.pkey}" >
 							 <img src="${pageContext.request.contextPath}/temp/img/${sUrl[0]}" class="img-responsive" style=" height: 270px; width: 250px;" alt="">
 							 	<div class="zoom-icon">
-							 		
 									<ul class="in-by">
 										<li><h5>sizes:</h5></li>   
 									</ul>
@@ -24,7 +23,7 @@
 		           </div>
 					<!---->
 						<div class="grid_1 simpleCart_shelfItem">
-							<a href="single?pkey=${fp.pkey}" class="cup item_add"><span class=" item_price" >&#x24;${fp.smrp} &#8377;  <i> </i> </span></a>
+							<a href="single?pkey=${fp.pkey}" class="cup item_add"><span class=" item_price" >&#x24;${fp.smrp}  <i> </i> </span></a>
 						</div>
 					<!---->
 				</div>

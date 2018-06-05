@@ -26,27 +26,25 @@
             <div class="menu">
                 <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 361px;"><ul class="list" style="overflow: hidden; width: auto; height: 361px;">
                     <li class="header">MAIN NAVIGATION</li>
-                    <li class="active">
-                        <a href="${pageContext.request.contextPath}/buyer/" class="toggled waves-effect waves-block">
-                            <span>My Profile</span>
-                        </a>
-                    </li>
+                   
                      <li>
                         <a href="${pageContext.request.contextPath}/buyer/account" class=" waves-effect waves-block">
-                            <span>Account</span>
+                            <span class="glyphicon glyphicon-user"></span><span>Account</span>
                         </a>
                     </li>
+                    
                     <li>
                         <a href="${pageContext.request.contextPath}/buyer/orderList" class=" waves-effect waves-block">
-                            <span>Orders</span>
+                            <span class="glyphicon glyphicon-list-alt"><span>Orders</span>
                         </a>
                     </li>
                     
                     <li>
                         <a href="${pageContext.request.contextPath}/buyer/changePassword" class=" waves-effect waves-block">
-                            <span>Change Password</span>
+                            <span class="glyphicon glyphicon glyphicon-lock color-blue"></span><span>Change Password</span>
                         </a>
                     </li>
+                   
                 </ul><div class="slimScrollBar" style="background: rgba(0, 0, 0, 0.5); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 0px; z-index: 99; right: 1px; height: 140.13px;"></div><div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
             </div>
             <!-- #Menu -->

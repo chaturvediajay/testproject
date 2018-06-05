@@ -12,6 +12,39 @@
 	rel="stylesheet" type="text/css" />
 <link href="../resources/admin/css/description.css" rel="stylesheet"
 	type="text/css" />
+	
+<style>
+
+.img-wraps {
+    position: relative;
+    display: inline-block;
+   
+    font-size: 0;
+}
+.img-wraps .closes {
+    position: absolute;
+    top: 5px;
+    right: 79px;
+    z-index: 100;
+    background-color: #FFF;
+    padding: 4px 3px;
+    
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+   
+    text-align: center;
+    font-size: 22px;
+    line-height: 10px;
+    border-radius: 50%;
+    border:1px solid red;
+}
+.img-wraps:hover .closes {
+    opacity: 1;
+}
+
+</style>	
+	
 <!-- End head -->
 <body class="theme-red">
 	${error}
@@ -64,35 +97,21 @@
 
 	<section class="content">
 
-	<form method="post">
+
 		<c:forEach var="fp" items="${product_desc}">
 			<c:set var="sUrl" value="${fn:split(fp.url,',')}" />
 			
 			<div class="container-fliud">
 				<div class="wrapper row">
 					<div class="preview col-md-6">
-
 						<c:if test="${fn:length(sUrl) > 0}">
+						<div  class="img-wraps">
+						<input type="submit" onclick="del('img','${sUrl[0]}')" value="X" class="closes" >
 							<img src="${pageContext.request.contextPath}/temp/img/${sUrl[0]}" 
-							alt="${fp.title}" class="img-responsive center-block" "="" style="height: 370px;">
+							alt="${fp.title}" class="img-responsive center-block" style="height: 370px;"></div>
 						</c:if>
 						<div class="preview-pic tab-content">
-							<%--  
-					
-						
-			<ul class="preview-thumbnail nav nav-tabs">
-						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
-						  <li><a data-target="#pic-2" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
-						  <li><a data-target="#pic-3" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
-						  <li><a data-target="#pic-4" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
-						  <li><a data-target="#pic-5" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
-						</ul>				
-				<div class="tab-pane active" id="pic-1"><img src="${pageContext.request.contextPath}/${sUrl[0]}" style="height: 400px;"/></div>
-			
-						  <div class="tab-pane" id="pic-2"><img src="http://placekitten.com/400/252" /></div>
-						  <div class="tab-pane" id="pic-3"><img src="http://placekitten.com/400/252" /></div>
-						  <div class="tab-pane" id="pic-4"><img src="http://placekitten.com/400/252" /></div>
-						  <div class="tab-pane" id="pic-5"><img src="http://placekitten.com/400/252" /></div> --%>
+							
 						</div>
 						
 						<ul class="preview-thumbnail nav nav-tabs">
@@ -159,7 +178,7 @@
 		<input type="hidden" name="pvid" value="${fp.visible}" /> 
 		<input type="hidden" name="update" value="pv" />
 	    <input type="hidden" name="pkey" value="pv" />
-	</form>
+
 	<input type="submit" name="updateButton" class="add-to-cart btn"
 		onclick="UpdateIdinHF('field_update')" value="update"> </section>
 
@@ -262,6 +281,11 @@
 
 			
 		}
+		function del(ch,msg){
+			
+		alert(ch+'  '+msg);
+		}
+		
 	</script>
 
 </body>

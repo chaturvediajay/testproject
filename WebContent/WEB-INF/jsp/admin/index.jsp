@@ -14,7 +14,7 @@
 <meta http-equiv="cache-control" content="max-age=0" />
 <META HTTP-EQUIV="Expires" CONTENT="-1">
 <meta http-equiv="Pragma" content="no-cache">
-<title>Welcome To | kritifab Account</title>
+<title>Chouhan Rugs</title>
 <!-- Favicon-->
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- Google Fonts -->

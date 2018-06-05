@@ -32,7 +32,7 @@ public class RegLogic {
 		Session session = null;
 		Transaction transaction = null;
 		boolean bol = false;
-		reg.setPswd(StrongAES.run(reg.getPswd()));
+		reg.setPswd(SaltedMD5Example.passwordStatic(true,reg.getPswd()));
 		reg.setAuthorize(2);
 		try {
 			session = HibernateUtil.getSessionFactory().openSession();
@@ -62,10 +62,11 @@ public class RegLogic {
 		try {
 			String username = request.getParameter("username");
 			String pswd = request.getParameter("pswd");
+			pswd= SaltedMD5Example.passwordStatic(true,pswd);
 
 			if ((username.length() > 0 & username != null) & (pswd.length() > 0 & pswd != null)) {
 				String query = "SELECT username,uid,name,email,authorize FROM registration " + "where pswd='"
-						+ StrongAES.run(pswd) + "' and (email='" + username + "' or username='" + username + "')";
+						+ pswd + "' and (email='" + username + "' or username='" + username + "')";
 
 				System.out.println(query);
 
@@ -202,7 +203,7 @@ public class RegLogic {
 					number = 1;
 				} else {
 					SQL_QUERY = "UPDATE updateaccount SET code='" + encyptedcode + "'," + "createDate=(SELECT NOW())"
-							+ "WHERE uid=" + uid;
+							+ ",status=0 WHERE uid=" + uid;
 					query = session.createSQLQuery(SQL_QUERY);
 					number = query.executeUpdate();
 				}
@@ -243,6 +244,7 @@ public class RegLogic {
 			if (ctx.equals("change") & password != null & confirmPwd != null & password.equals(confirmPwd)
 					& code != null) {
 				tx = session.beginTransaction();
+				password = SaltedMD5Example.passwordStatic(true, password);
 				String sql_query = "update registration r,(SELECT * FROM updateaccount where code='" + code + "') src ,"
 						+ " updateaccount ua" + " SET r.pswd = '" + password
 						+ "',ua.status=1 where r.uid=src.uid and src.status=0";
@@ -284,7 +286,6 @@ public class RegLogic {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(reg_rowCount("update_account_code"));
 		
 		
 	}

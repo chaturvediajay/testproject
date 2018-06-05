@@ -48,34 +48,39 @@ public class HomeController {
 	public String indexGet(HttpServletRequest request, ModelMap map) {
 		try {
 
-			// map.addAttribute("proList", ProductLogic.getProductHome("all",
-			// ""));
-			// map.addAttribute("getProp", getLoggerPath().getAbsolutePath());
+//			map.addAttribute("proList", ProductLogic.getProductHome("all", ""));
+//			map.addAttribute("getProp", getLoggerPath().getAbsolutePath());
 
 		} catch (Exception e) {
 			logger.error("HomeController error(42)indexGet  " + e.toString());
 		}
 		return "index";
 	}
+	
 
 	@RequestMapping(value = { "/up" }, method = { RequestMethod.GET })
 	public String upxGet(HttpServletRequest request, ModelMap map) {
 		try {
-
+			
 			MenuLogic m1l = new MenuLogic();
 			m1l.getAllMwnu(m1l);
 			map.addAttribute("menus1", m1l.getLmenu1());
 			map.addAttribute("menus2", m1l.getLmenu2());
-			// map.addAttribute("menus3", m1l.getLmenu3());
-			map.addAttribute("proList", ProductLogic.getProductHome("all", "", 1, 10));
-			map.addAttribute("slide_top", ProductLogic.getProductHome("slide_top_all", "", 0, 0));
+			//map.addAttribute("menus3", m1l.getLmenu3());
+			map.addAttribute("proList", ProductLogic.getProductHome("all", "",1,10));
+			map.addAttribute("slide_top", ProductLogic.getProductHome("slide_top_all", "",0,0));
 			map.addAttribute("getProp", getLoggerPath().getAbsolutePath());
+			
+			
+			
 
 		} catch (Exception e) {
 			logger.error("HomeController error(42)indexGet  " + e.toString());
 		}
 		return "index1";
 	}
+	
+	
 
 	private File getLoggerPath() {
 
@@ -115,7 +120,7 @@ public class HomeController {
 			String pkey = request.getParameter("pkey");
 			System.out.println("pkey:-  " + pkey);
 			if (pkey != null)
-				map.addAttribute("product_desc", ProductLogic.getProductHome("pkey", pkey, 0, 0));
+				map.addAttribute("product_desc", ProductLogic.getProductHome("pkey", pkey,0,0));
 			else
 				return "index";
 		} catch (Exception e) {
@@ -131,14 +136,14 @@ public class HomeController {
 			m1l.getAllMwnu(m1l);
 			map.addAttribute("menus1", m1l.getLmenu1());
 			map.addAttribute("menus2", m1l.getLmenu2());
-
+			
 			map.addAttribute("retrive", CartSession.getCartSession(request));
 		} catch (Exception e) {
 			logger.error("HomeController error(83) getCheckout  " + e.toString());
 		}
 		return "cart";
 	}
-
+	
 	@RequestMapping(value = { "/cart" }, method = { RequestMethod.POST })
 	public void getCartAvail(@RequestParam("json") String json, HttpServletResponse response,
 			HttpServletRequest request) throws Exception {
@@ -196,24 +201,28 @@ public class HomeController {
 		}
 		return "contactUs";
 	}
-
+	
 	@RequestMapping(value = { "/contactUs" }, method = { RequestMethod.POST })
 	public String postContactUs(HttpServletRequest request, ModelMap map) {
 		try {
-			String name = request.getParameter("name");
-			String username = request.getParameter("username");
-			String userMsg = request.getParameter("userMsg");
-
-			System.out.println("post contactUs name=" + name + "   userName=" + username + "  msg=" + userMsg);
-			String str = "Dear sir i am " + name + " My email Id:-" + username + " meassage:- " + userMsg + "";
-			boolean bol = SendEmail.send("Query ", str, "kr.maheshsingh@gmail.com");
-
-			if (bol) {
+			String name=request.getParameter("name");
+			String username=request.getParameter("username");
+			String userMsg=request.getParameter("userMsg");
+			
+			
+			System.out.println("post contactUs name="+name+"   userName="+username+"  msg="+userMsg);
+			String str="Dear sir i am "+name+" My email Id:-"+username+" meassage:- "+userMsg+"";
+			boolean bol=SendEmail.send("Query ", str, "kr.maheshsingh@gmail.com");
+			
+			if(bol){
 				map.addAttribute("error", "Submit Successfully.");
-			} else {
+				}
+			else
+				{
 				map.addAttribute("error", "request not completed.");
-			}
+				}
 			return "contactUs";
+					
 
 		} catch (Exception e) {
 			logger.error("HomeController error(213) contactUs  " + e.toString());
@@ -223,17 +232,18 @@ public class HomeController {
 
 	@RequestMapping(value = { "/shipping" }, method = { RequestMethod.GET })
 	public String getShipping(HttpServletRequest request, ModelMap map) {
-
+		
 		MenuLogic m1l = new MenuLogic();
 		m1l.getAllMwnu(m1l);
 		map.addAttribute("menus1", m1l.getLmenu1());
 		map.addAttribute("menus2", m1l.getLmenu2());
 
-		http: // localhost:8080/kritifab/login?shop=payment
-
+		http://localhost:8080/kritifab/login?shop=payment
+		
 		try {
 			if (RegLogic.checkLogin(request))
 				return "redirect:login?shop=payment";
+		
 
 		} catch (Exception e) {
 			logger.error("HomeController error(98) getShipping  " + e.toString());
@@ -359,7 +369,7 @@ public class HomeController {
 				map.addAttribute("error", reg.checkValid(request));
 
 			else {
-				if (RegLogic.regNewUser(reg, this.getLocalHost(request)))
+				if (RegLogic.regNewUser(reg,this.getLocalHost(request)))
 					map.addAttribute("error", "account create sucessfully.");
 				else
 					map.addAttribute("error", "try later.");
@@ -372,20 +382,20 @@ public class HomeController {
 
 	@RequestMapping(value = { "/login" }, method = { RequestMethod.GET })
 	public String getLogin(HttpServletRequest request, ModelMap map) {
-
+		
 		try {
-			if (RegLogic.checkLogin(request)) {
+			if (RegLogic.checkLogin(request)){
 				MenuLogic m1l = new MenuLogic();
 				m1l.getAllMwnu(m1l);
 				map.addAttribute("menus1", m1l.getLmenu1());
 				map.addAttribute("menus2", m1l.getLmenu2());
 				return "login";
 			}
-
-			else {
-				// "redirect:login?shop=payment";
-				String query = request.getParameter("shop");
-				if (query != null & query.equals("payment"))
+			
+			else{
+				//"redirect:login?shop=payment";
+				String query=request.getParameter("shop");
+				if(query!=null & query.equals("payment"))
 					return "redirect:shipping";
 			}
 		} catch (Exception e) {
@@ -402,14 +412,14 @@ public class HomeController {
 			if (ls == null) {
 				if (RegLogic.loginUser(request)) {
 					ls = (LoginSession) request.getSession().getAttribute("loginSession");
-
-					if (request.getParameter("shop") != null) {
-						String query = request.getParameter("shop");
-						if (query != null & query.equals("payment"))
+					
+					if(request.getParameter("shop") != null){
+						String query=request.getParameter("shop");
+						if(query!=null & query.equals("payment"))
 							return "redirect:shipping";
-
+						
 					}
-
+					
 					else
 						return "redirect:buyer/";
 				} else
@@ -480,11 +490,14 @@ public class HomeController {
 	@RequestMapping(value = { "/reciept" }, method = { RequestMethod.GET })
 	public String getReceipt(HttpServletRequest request, ModelMap model) {
 		try {
-
-			IntregationPayPal ip = new IntregationPayPal();
-
+			
+			
+			IntregationPayPal ip=new IntregationPayPal();
+			
 			ip.successPage(request);
-
+			
+			
+			
 			SessionUser su = new SessionUser();
 			if (su.getSession(request, "order_no") & su.getSession(request, "loginSession")) {
 				LoginSession ls = (LoginSession) request.getSession().getAttribute("loginSession");
@@ -496,7 +509,7 @@ public class HomeController {
 				model.addAttribute("other", CartLogic.getPayDetail(od.getOther(), od.getTotal()));
 				model.addAttribute("shippingAdd", (ShippingModel) CartLogic.getOrderInfo(ls, order_no, 2));
 				model.addAttribute("itemDetail", (List<CartModel>) CartLogic.listCartModelByOrderNo(order_no, ls));
-
+				
 				request.getSession().removeAttribute("order_no");
 			} else
 				model.addAttribute("order_no", "No order found");
@@ -507,6 +520,7 @@ public class HomeController {
 		}
 		return "reciept";
 	}
+
 
 	@RequestMapping(value = { "/reciept" }, method = { RequestMethod.POST })
 	public String postReceipt(HttpServletRequest request, ModelMap map) {
@@ -573,49 +587,47 @@ public class HomeController {
 		return "redirect:/";
 	}
 
-	// @RequestMapping(value = { "/cancel" }, method = { RequestMethod.GET })
-	// public String getCancel(@ModelAttribute("firstname") String firstname,
-	// @ModelAttribute("lastname") String lastname,
-	// @ModelAttribute("time") String time, @ModelAttribute("error") String
-	// error,
-	// @ModelAttribute("payid") String payid, @ModelAttribute("amount") String
-	// amount, ModelMap model) {
-	// try {
-	// if (firstname.length() > 0 & lastname.length() > 0 & time.length() > 0 &
-	// payid.length() > 0) {
-	// model.addAttribute("firstname", firstname.replaceAll("\\+", ""));
-	// model.addAttribute("lastname", lastname.replaceAll("\\+", ""));
-	// model.addAttribute("time", time.replaceAll("\\+", ""));
-	// model.addAttribute("error", error.replaceAll("\\+", ""));
-	// model.addAttribute("payid", payid.replaceAll("\\+", ""));
-	// model.addAttribute("amount", amount.replaceAll("\\+", ""));
-	// return "cancel";
-	// }
-	//
-	// } catch (Exception e) {
-	// logger.error("HomeController error(368) getCancel " + e.toString());
-	// }
-	//
-	// return "redirect:/";
-	// }
+//	@RequestMapping(value = { "/cancel" }, method = { RequestMethod.GET })
+//	public String getCancel(@ModelAttribute("firstname") String firstname, @ModelAttribute("lastname") String lastname,
+//			@ModelAttribute("time") String time, @ModelAttribute("error") String error,
+//			@ModelAttribute("payid") String payid, @ModelAttribute("amount") String amount, ModelMap model) {
+//		try {
+//			if (firstname.length() > 0 & lastname.length() > 0 & time.length() > 0 & payid.length() > 0) {
+//				model.addAttribute("firstname", firstname.replaceAll("\\+", ""));
+//				model.addAttribute("lastname", lastname.replaceAll("\\+", ""));
+//				model.addAttribute("time", time.replaceAll("\\+", ""));
+//				model.addAttribute("error", error.replaceAll("\\+", ""));
+//				model.addAttribute("payid", payid.replaceAll("\\+", ""));
+//				model.addAttribute("amount", amount.replaceAll("\\+", ""));
+//				return "cancel";
+//			}
+//
+//		} catch (Exception e) {
+//			logger.error("HomeController error(368) getCancel  " + e.toString());
+//		}
+//
+//		return "redirect:/";
+//	}
 	@RequestMapping(value = { "/cancel" }, method = { RequestMethod.GET })
 	public String getCancel(HttpServletRequest request, ModelMap model) {
 		if (request.getParameter("method").equals("paypal")) {
 			String trasaction_code = request.getParameter("trasaction_code");
 			String tokenId = request.getParameter("token");
 			model.addAttribute("cancel_view", PaymentLogic.orderCancel(trasaction_code, tokenId, -1));
-			// Enumeration<String> kayParams = request.getParameterNames();
-			// while (kayParams.hasMoreElements()) {
-			// String key = (String) kayParams.nextElement();
-			// String value = request.getParameter(key).toString();
-			//
-			//
-			// System.out.println(key+" --- "+value);
-			// }
+//			Enumeration<String> kayParams = request.getParameterNames();
+//			while (kayParams.hasMoreElements()) {
+//				String key = (String) kayParams.nextElement();
+//				String value = request.getParameter(key).toString();
+//				
+//				
+//				System.out.println(key+"  ---  "+value);
+//			}
 		}
 		return "cancel";
 	}
-
+	
+	
+	
 	@RequestMapping(value = { "/forgot_password_email" }, method = { RequestMethod.GET })
 	public String getforgot_password(HttpServletRequest request, ModelMap model) {
 		String ctx = request.getParameter("ctx");

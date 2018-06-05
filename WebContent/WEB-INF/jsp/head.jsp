@@ -34,7 +34,7 @@ response.setDateHeader("Expires", -1);%>
 <c:set var="rand"><%= java.lang.Math.round(java.lang.Math.random() * 1000) %></c:set>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>chouhanrugs</title>
-
+<link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <link href="${pageContext.request.contextPath}/css/bootstrap.css?randId=${rand}" rel="stylesheet" type="text/css" media="all">
 <link href="${pageContext.request.contextPath}/css/style.css?randId=${rand}" rel="stylesheet">

@@ -28,6 +28,7 @@ public class ProductLogic {
 	}
 
 	static final Logger logger = Logger.getLogger(ProductLogic.class);
+	
 
 	public static boolean uniqueSingleClass(HashMap<String, String> myMap, Object obj) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
@@ -155,7 +156,8 @@ public class ProductLogic {
 		String query = null;
 
 		if (queryS.equals("all")) {
-			query = "SELECT pd.url,group_concat(concat(`size`) separator ',') as size, pd.description, p.title,pd.mrp,pd.smrp,pd.pkey FROM product p join product_detail pd on   pd.pkey=p.pkey group by p.pkey";
+			query="SELECT (SELECT count(*) FROM product p join product_detail pd on pd.pkey=p.pkey ) as count,";
+			query += " pd.url,group_concat(concat(`size`) separator ',') as size, pd.description, p.title,pd.mrp,pd.smrp,pd.pkey FROM product p join product_detail pd on   pd.pkey=p.pkey group by p.pkey";
 		} else if (queryS.equals("single")) {
 			query = "SELECT pd.visible,pd.color,pd.url,pd.description,pd.size, p.title,pd.mrp,pd.smrp,pd.pkey FROM product p join product_detail pd on pd.pkey=p.pkey  where CONCAT(p.pkey, pd.pdid)='"
 					+ pkey + "' " + " group by p.pkey";
@@ -169,11 +171,12 @@ public class ProductLogic {
 		System.out.println("query===" + query);
 		try {
 			session.beginTransaction();
+			AbstractClass ac=new AbstractClass();
 			List<Object[]> list = null;
 			if (start == 0 & length == 0)
 				list = AbstractClass.listObj(query);
 			else
-				list = AbstractClass.listObj(query, start, length);
+				list = ac.listObj(query, start, length);
 
 			for (int i = 0; i < list.size(); i++) {
 				Object[] row = (Object[]) list.get(i);
@@ -190,6 +193,8 @@ public class ProductLogic {
 						sh.setColor(row[(j - 7)].toString());
 						sh.setVisible(Integer.parseInt(row[(j - 8)].toString()));
 					}
+					if(queryS.equals("all"))
+						sh.setCount(Integer.parseInt(row[(j - 7)].toString()));
 
 					lsh.add(sh);
 				}

@@ -423,7 +423,15 @@ function cartview(response) {
 	var par = JSON.parse(obj);
 	 var da = eval(par.data);
 	 da = response.data;
+	 
 	var amt = 0;
+	console.log(response.size);
+	
+	if(response.size==0)
+		
+		$('.check').html(response.html);
+	
+	
 //	$('#cartBox').html('');
 if (da != null & da.length>5 ) {
 	/*		da = eval(da);
@@ -432,7 +440,7 @@ if (da != null & da.length>5 ) {
 			amt = amt + (object['smrp'] * object['qty']); *
 		}
 	*/	
-		$('.simpleCart_quantity1').text(da.length);
+		$('.simpleCart_quantity1').text(response.size);
 		$('.simpleCart_total1').text(par.grand_total);
 		
 		console.log("da.length "+par.grand_total+":"+da.length);
@@ -448,12 +456,11 @@ if (da != null & da.length>5 ) {
 //					+ "<div class=\"clearfix\"> </div>");
 //			
 //		}
-//		else
-//			{
-//			$('#cartBox').append("<p><a href=\"javascript:;\" class=\"simpleCart_empty\"><img src=\"images/cart-c.png\" alt=\"\"></a></p>"
-//					+ "<div class=\"clearfix\"> </div>");
-//			
-//			}
+		
+		
+		
+	
+	
 	
 		
 
@@ -463,6 +470,9 @@ if (da != null & da.length>5 ) {
 	}
 
 }
+
+
+
 
 function loadFinalCart(cas) {
 	var js1 = new Object();
@@ -737,6 +747,8 @@ function act(btn, num, pkey, cal, metod) {
 	default:
 
 	}
+	loadCart();
+	window.location = window.location.href.split("?")[0];
 }
 function actRes(res) {
 	var obj = JSON.stringify(res);
@@ -755,11 +767,6 @@ function actRes(res) {
 					$('#test').remove();
 				} else
 					loadCart();
-				/*
-				 * $('#cartvalue').text('0'); $(bt).closest("table").remove();
-				 * $('.table-responsive').text('empty cart');
-				 */
-
 			}
 			if (me == 'final') {
 				if (jobj.data == '') {
@@ -769,8 +776,6 @@ function actRes(res) {
 					loadCart();
 				loadFinalCart('final')
 			}
-			
-
 			break;
 		case 'update':
 			if (me == 'html') {
@@ -1036,6 +1041,7 @@ function callDataTableWith (d,id,url,requestType,columnData,buttonData){
 			"bDestroy": true,
 			"autoWidth": false,
 			"pageLength" : 10,
+			"ordering": false,
             "dom": 'Bfrtip',
             "ajax" : {
 				"url" : url,

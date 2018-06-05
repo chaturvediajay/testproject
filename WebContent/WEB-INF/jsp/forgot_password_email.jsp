@@ -11,6 +11,10 @@
 .form-gap {
 	padding-top: 70px;
 }
+.error-template {
+    padding: 42px 15px;
+    text-align: center;
+}
 </style>
 <body>
 	<c:set var="forgot_pswd" scope="session"><%=java.lang.Math.round(java.lang.Math.random() * 10000)%></c:set>
@@ -21,10 +25,19 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
+			
+			
+			<c:if test="${trace ne 0}">
+			
+			
+			
+			
 				<div class="panel panel-default">
-					<div class="panel-body">
+					
 						<c:if test="${trace > 0}">
+						
 							<c:if test="${param.ctx=='recover'}">
+							<div class="panel-body">
 								<div class="text-center">
 									<h3>
 										<i class="fa fa-lock fa-4x"></i>
@@ -52,11 +65,12 @@
 										</form>
 									</div>
 								</div>
+								</div>
 							</c:if>
 
 
 							<c:if test="${param.ctx=='change'}">
-
+								<div class="panel-body">
 								<div class="show" id="reset_pwd">
 									<h3>
 										<i class="fa fa-lock fa-4x"></i>
@@ -95,16 +109,48 @@
 										</form>
 									</div>
 								</div>
+								</div>
 							</c:if>
+							
 						</c:if>
 						<span class="label label-info">${msg}</span>
-					</div>
-					<c:if test="${trace eq 0}">
-						<span class="label label-info">request can't not be found</span>
-					</c:if>
+						
+						
+						
+						
+					
 				</div>
+				
+				
+				
+				</c:if>
+				
+				
+				
+				
 			</div>
 		</div>
+		<c:if test="${trace eq 0}">
+		<div class="row">
+        <div class="col-md-12">
+            <div class="error-template">
+                <h1>
+                    Oops!</h1>
+                <h2>
+                    404 Not Found</h2>
+                <div class="error-details">
+                    Sorry, an error has occured, Requested page not found!
+                </div>
+                <div class="error-actions">
+                    <a href="${pageContext.request.contextPath}/" class="btn btn-primary btn-lg">
+                    <span class="glyphicon glyphicon-home"></span>Take Me Home </a>
+                    <a href="${pageContext.request.contextPath}/contactUs" class="btn btn-default btn-lg">
+                    <span class="glyphicon glyphicon-envelope"></span> Contact Support </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </c:if>
 	</div>
 	<!--footer-->
 	<%@include file="footer.jsp"%>

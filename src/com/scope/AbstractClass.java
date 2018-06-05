@@ -25,6 +25,7 @@ public class AbstractClass {
 	// private static Session session = null;
 	// private static Transaction transaction = null;
 	final static Logger logger = Logger.getLogger(AbstractClass.class);
+	private int rowcount=0;
 
 	public static List<Object> getMenuObj(Object obj, Session session) {
 		int i = 0;
@@ -295,11 +296,10 @@ public class AbstractClass {
 		return list;
 	}
 
-	public static List<Object[]> listObj(String sqlQuery, int start, int length) {
+	public  List<Object[]> listObj(String sqlQuery, int start, int length) {
 		Session session = null;
 		Transaction ts = null;
 		List<Object[]> list = Collections.emptyList();
-
 		try {
 			if (session == null) {
 				session = HibernateUtil.getSessionFactory().openSession();
@@ -307,6 +307,8 @@ public class AbstractClass {
 			}
 			Query hSql = null;
 			hSql = session.createSQLQuery(sqlQuery);
+			list = hSql.list();
+			rowcount=list.size();
 			hSql.setFirstResult(start);
 			hSql.setMaxResults(length);
 			list = hSql.list();
@@ -358,6 +360,10 @@ public class AbstractClass {
 			session.clear();
 		}
 		return 0;
+	}
+
+	public int getRowcount() {
+		return rowcount;
 	}
 
 }

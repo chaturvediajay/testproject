@@ -1,14 +1,18 @@
 <!DOCTYPE HTML>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%><%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%><%@ taglib
+	prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <fmt:bundle basename="trasaction">
-       <fmt:message var="company_introduction" key="company.introduction"/>
-       <fmt:message var="company_name" key="company.name"/>
-       <fmt:message var="company_director_name" key="company.director.name"/>
-       <fmt:message var="company_director_visible" key="company.director.visible"/>
-       <fmt:message var="company_address" key="company.address"/>
-       <fmt:message var="company_contact" key="company.contact"/>
-       <fmt:message var="company_email" key="company.email"/>
- </fmt:bundle>
+	<fmt:message var="company_introduction" key="company.introduction" />
+	<fmt:message var="company_name" key="company.name" />
+	<fmt:message var="company_director_name" key="company.director.name" />
+	<fmt:message var="company_director_visible"
+		key="company.director.visible" />
+	<fmt:message var="company_address" key="company.address" />
+	<fmt:message var="company_contact" key="company.contact" />
+	<fmt:message var="company_email" key="company.email" />
+	<fmt:message var="company_facebook" key="company.facebook" />
+	<fmt:message var="company_twitter" key="company.twitter" />
+</fmt:bundle>
 <html>
 <head>
 <meta name="viewport"
@@ -119,10 +123,8 @@
 						</h3>
 						<ul>
 							<li><i class="fa fa-map-marker" aria-hidden="true"></i>
-								
-								${company_address}
-								
-								</li>
+
+								${company_address}</li>
 							<li><i class="fa fa-phone" aria-hidden="true"></i> <a
 								href="tel:${company_contact}">${company_contact}</a></li>
 						</ul>
@@ -143,7 +145,8 @@
 				<!-- logog -->
 
 				<h1>
-					<a href="#" title="${company_name}" style="text-transform: capitalize;">${company_name}</a>
+					<a href="#" title="${company_name}"
+						style="text-transform: capitalize;">${company_name}</a>
 				</h1>
 
 				<!-- logog -->
@@ -159,10 +162,8 @@
 					</ul>
 					<div role="socil-icons" class="mobile-social">
 						<!--    <li><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
-						<li><a
-							href="https://www.facebook.com/KRITI-FAB-1507505896185372/"
-							target="_blank" title="facebook"><i class="fa fa-facebook"
-								aria-hidden="true"></i></a></li>
+						<li><a href="${company_facebook}" target="_blank"
+							title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 						<!--       <li><a href="#" target="_blank" title="google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> -->
 						<!--        <li><a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li> -->
 					</div>
@@ -173,11 +174,10 @@
 				<!-- Socil Icon -->
 
 				<ul role="socil-icons" class="desk-social">
-					<!--    <li><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
-					<li><a
-						href="https://www.facebook.com/KRITI-FAB-1507505896185372/"
-						target="_blank" title="facebook"><i class="fa fa-facebook"
-							aria-hidden="true"></i></a></li>
+					<li><a href="${company_twitter}" target="_blank"
+						title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#" target="_blank" title="facebook"><i
+							class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<!--   <li><a href="#" target="_blank" title="google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> -->
 					<!--   <li><a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li> -->
 				</ul>
@@ -197,8 +197,9 @@
 
 		<footer class="mobile">
 			<p>
-				&copy; All rights reserved.<a target="_blank">blagot infotech</a>2018 Made with <i
-					class="fa fa-heart" aria-hidden="true"></i> by blagot team
+				&copy; All rights reserved.<a target="_blank">blagot infotech</a>2018
+				Made with <i class="fa fa-heart" aria-hidden="true"></i> by blagot
+				team
 			</p>
 		</footer>
 	</div>

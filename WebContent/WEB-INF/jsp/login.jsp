@@ -26,7 +26,7 @@ label.error {
     </div>
 	<div class="col-lg-4 well" class="text-center">
 	<div class="logo">
-				<a href="${pageContext.request.contextPath}/"><img src="/chouhanrugs/images/logo.png" alt="" style="
+				<a href="${pageContext.request.contextPath}/"><img src="images/logonew.png" alt="" style="
     height: 58px;
     margin-left: 31px;
     margin-bottom: -58px;

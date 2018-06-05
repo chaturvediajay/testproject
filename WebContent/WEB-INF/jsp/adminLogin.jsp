@@ -1,6 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+	<c:remove var="loginSession" />
+
 <html>
 <!-- head -->
 <%@include file="head.jsp"%>
@@ -59,7 +63,7 @@ body {
 	<!--   part : Just a footer -->
 	<div
 		style="position: fixed; bottom: 10px; left: 10px; background: #4679BC; padding: 4px; border-radius: 2px; border: 1px solid #4679AA">
-		<a href="http://www.kritifab.com/" title="more ..."
+		<a href="http://www.chouhanrugs.com/" title="more ..."
 			style="padding: 6px; text-decoration: none; font-size: 12px; color: #fff; letter-spacing: 1.5px;">
 			back to home</a>
 	</div>

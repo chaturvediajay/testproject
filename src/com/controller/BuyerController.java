@@ -47,11 +47,12 @@ public class BuyerController {
 				return "redirect:/";
 			else
 				map.addAttribute("featuredPro", " Get Controller");
+			map.addAttribute("regInfom", RegLogic.getProductUserDetail(request));
 
 		} catch (Exception e) {
 			logger.error("BuyerController error(35)indexGet  " + e.toString());
 		}
-		return "buyer/index";
+		return "buyer/account";
 	}
 	@RequestMapping(value = { "/account" }, method = { RequestMethod.GET })
 	public String getAccount(HttpServletRequest request, ModelMap map) {
@@ -60,7 +61,6 @@ public class BuyerController {
 				return "redirect:/";
 			else{
 				map.addAttribute("regInfom", RegLogic.getProductUserDetail(request));
-				map.addAttribute("mistate", ReadFile.getState(request));
 			}
 		} catch (Exception e) {
 			logger.error("BuyerController error(35)indexGet  " + e.toString());

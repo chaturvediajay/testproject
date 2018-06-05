@@ -46,5 +46,5 @@
     <script src="${pageContext.request.contextPath}/resources/js/jquery.responsiveTabs.js"></script>
     <script src="${pageContext.request.contextPath}/resources/js/jquery.validate.min.js"></script>
     <script src="${pageContext.request.contextPath}/resources/js/separate.js?v=${rand}"></script>
-    <script src="js/admin.js"></script>
+    <script src="../admin/js/admin.js"></script>
     

@@ -41,8 +41,9 @@
 							<td class="logo_img" width="155"><a
 								style="text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bold; color: #6ac451"
 								href="${pageContext.request.contextPath}" rel="noreferrer"><img
-									src="images/logo.png"
+									src="images/logonew.png"
 									alt="blaGOt></a></td>
+									
 				<td width="26">&nbsp;</td>
 			</tr>
 			<tr>
@@ -74,7 +75,7 @@
 				<td width="24">&nbsp;</td>
 				<td
 					style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #666666; line-height: 20px"
-					colspan="2">We noticed that your transaction through PayUMoney
+					colspan="2">We noticed that your transaction through PayPal
 					might not have been successful.</td>
 				<td>&nbsp;</td>
 			</tr>
@@ -240,7 +241,7 @@
 				<td width="24">&nbsp;</td>
 				<td
 					style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000; line-height: 24px"
-					colspan="2">blagot Support</td>
+					colspan="2">Chouhan Rugs Support</td>
 				<td>&nbsp;</td>
 			</tr>
 			<tr>

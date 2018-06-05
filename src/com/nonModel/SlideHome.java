@@ -10,6 +10,7 @@ public class SlideHome {
 	private String description;
 	private String color;
 	private int visible;
+	private int count;
 	public String getUrl() {
 		return url;
 	}
@@ -69,10 +70,16 @@ public class SlideHome {
 	public void setVisible(int visible) {
 		this.visible = visible;
 	}
+	public int getCount() {
+		return count;
+	}
+	public void setCount(int count) {
+		this.count = count;
+	}
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "mrp: "+mrp+" title:-"+title+"  pkey:-"+pkey+"  url"+url;
+		return "mrp: "+mrp+" title:-"+title+"  pkey:-"+pkey+"  url"+url+" size:- "+size;
 	}
 
 }

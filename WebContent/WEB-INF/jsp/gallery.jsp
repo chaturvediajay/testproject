@@ -40,104 +40,84 @@
                         <div class="body">
                             <div id="aniimated-thumbnials" class="list-unstyled row clearfix">
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/1.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-1.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-1.jpg" style=" height: 279px;width: 282px;">
+                                 
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/2.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-2.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-2.jpg" style=" height: 279px;width: 282px;">
+                                 
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/3.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-3.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-3.jpg" style=" height: 279px;width: 282px;">
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/4.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-4.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-4.jpg" style=" height: 279px;width: 282px;">
+                               
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/5.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-5.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-5.jpg" style=" height: 279px;width: 282px;">
+                               
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/6.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-6.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-6.jpg" style=" height: 279px;width: 282px;">
+                                
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/7.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-7.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-7.jpg" style=" height: 279px;width: 282px;">
+                                
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/8.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-8.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-8.jpg" style=" height: 279px;width: 282px;">
+                                 
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/9.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-9.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-9.jpg" style=" height: 279px;width: 282px;">
+                                  
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/10.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-10.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-10.jpg" style=" height: 279px;width: 282px;">
+                                  
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/11.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-11.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-11.jpg" style=" height: 279px;width: 282px;">
+                                   
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/12.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-12.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-12.jpg" style=" height: 279px;width: 282px;">
+                                  
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                                     <a href="images/image-gallery/13.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-13.jpg">
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-13.jpg" style=" height: 279px;width: 282px;">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/14.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-14.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-14.jpg" style=" height: 279px;width: 282px;">
+                                
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/15.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-15.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-15.jpg" style=" height: 279px;width: 282px;">
+                                  
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/16.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-16.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-16.jpg" style=" height: 279px;width: 282px;">
+                                
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/17.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-17.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-17.jpg" style=" height: 279px;width: 282px;">
+                                
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/18.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-18.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-18.jpg" style=" height: 279px;width: 282px;">
+                                 
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/19.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-19.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-19.jpg" style=" height: 279px;width: 282px;">
+                                  
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="images/image-gallery/20.jpg" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-20.jpg">
-                                    </a>
+                                        <img class="img-responsive thumbnail" src="images/image-gallery/thumb/thumb-20.jpg" style=" height: 279px;width: 282px;">
+                                  
                                 </div>
                             </div>
                         </div>

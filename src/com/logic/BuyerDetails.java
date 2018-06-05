@@ -15,6 +15,7 @@ import com.model.HibernateUtil;
 import com.model.LoginSession;
 import com.model.Registration;
 import com.scope.AbstractClass;
+import com.scope.SaltedMD5Example;
 import com.scope.SessionUser;
 import com.scope.StrongAES;
 
@@ -24,8 +25,6 @@ public class BuyerDetails {
 	static SessionUser su = new SessionUser();
 
 	private int count;
-
-
 
 	public static Registration getRegInfo(int uid) {
 		Registration reg = null;
@@ -53,9 +52,13 @@ public class BuyerDetails {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction tx = session.beginTransaction();
 		try {
+
+			String password = SaltedMD5Example.passwordStatic(true, obj.getString("oldPwd"));
+			String new_password = SaltedMD5Example.passwordStatic(true, obj.getString("newPwd"));
+
 			Registration mi = (Registration) session.get(Registration.class, ls.getId());
-			if (mi.getPswd().equals(StrongAES.run(obj.getString("oldPwd")))) {
-				mi.setPswd(StrongAES.run(obj.getString("newPwd")));
+			if (mi.getPswd().equals(password)) {
+				mi.setPswd(new_password);
 				session.update(mi);
 				return true;
 			}
@@ -79,13 +82,6 @@ public class BuyerDetails {
 
 		return false;
 	}
-
-	
-
-
-	
-
-	
 
 	public void setCount(int count) {
 		this.count = count;

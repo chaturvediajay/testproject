@@ -16,7 +16,6 @@
 <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js?randId=${rand}"></script>
 <script src="${pageContext.request.contextPath}/js/separate.js?randId=${rand}"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-
 <script src="${pageContext.request.contextPath}/js/jquery.etalage.min.js?randId=${rand}"></script>
 		<script>
 			jQuery(document).ready(function($){

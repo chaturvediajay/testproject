@@ -23,27 +23,17 @@
 	<c:forEach var="fp" items="${product_desc}">
 <c:set var="sUrl" value="${fn:split(fp.url,',')}" />
 <c:set var="num" value="0" scope="page" />	
-	
-	
-	
 <div class="content">
 	<div class="container">
 		<div class="panel-body">
 				<div class="col-md-9 top-in-single ">
 					<div class="col-md-5 single-top">	
 						<ul id="etalage" class="etalage" style="display: block; width: 302px; height: 537px;">
-						
-						
-						
 					<c:if test="${fn:length(sUrl) > 0}">
-					
-					
 							<li class="etalage_thumb thumb_2 etalage_thumb_active" style="background-image: none; display: list-item; opacity: 1;">
 								<img class="etalage_thumb_image img-responsive" src="${pageContext.request.contextPath}/temp/img/${sUrl[0]}" style="display: inline; width: 300px; height: 400px; opacity: 1;">
 								<img class="etalage_source_image img-responsive" src="${pageContext.request.contextPath}/temp/img/${sUrl[0]}" alt="">
 							</li>
-					
-						
 							<li class="etalage_thumb thumb_2 etalage_thumb_active" style="background-image: none; display: list-item; opacity: 1;">
 								<img class="etalage_thumb_image img-responsive" src="${pageContext.request.contextPath}/temp/img/${sUrl[0]}" style="display: inline; width: 300px; height: 400px; opacity: 1;">
 								<img class="etalage_source_image img-responsive" src="${pageContext.request.contextPath}/temp/img/${sUrl[0]}" alt="">
@@ -85,7 +75,7 @@
 							<div class="clearfix"> </div>
 							</div>
 								<label class="add-to price">${currency_dollar}${fp.smrp}</label>
-							 		<label class="add-to price">${currency_dollar}${fp.mrp}</label>
+							 	<del>	<label class="add-to price">${currency_dollar}${fp.mrp}</label></del>
 							<div class="available">
 								<h6>Available Options :</h6>
 								<ul>

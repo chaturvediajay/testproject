@@ -17,7 +17,7 @@
 <meta http-equiv="cache-control" content="max-age=0" />
 <META HTTP-EQUIV="Expires" CONTENT="-1">
 <meta http-equiv="Pragma" content="no-cache">
-<title>Welcome To | kritifab </title>
+<title>Chouhan Rugs </title>
 <!-- Favicon-->
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- Google Fonts -->
@@ -153,29 +153,13 @@
 					<li class="list-group-item"><strong>Complete Address:-</strong>
 					<input type="text" class="form-control" id="address" value="${regInfom.address}"></li>
 					<li class="list-group-item"><strong>Region / State:-</strong>
-					<select class="form-control" id="categories" 
-					onchange="changeCate('someselect','pin_delivery_model','categories')" 
-					name="state" ng-model="state" ng-init="state='${regInfom.state}'">
-					<option value="" >Select</option>
-					<c:forEach items="${mistate}" var="entry">
-						<option value="${entry.key}"<c:if test="${regInfom.state eq entry.key}">selected="selected"</c:if>>${entry.value}</option>
-					</c:forEach>	
-					</select></li>
+					<input type="text" class="form-control" id="state" value="${regInfom.state}"></li>
+					</li>
 					<li class="list-group-item"><strong>City:-</strong>
-					<select class="form-control" id="someselect"
-					onchange="getPin('modelselect','pin_delivery_model','someselect')"
-					ng-model="city" ng-init="city'${regInfom.city}'">
-							<option value="">Select</option>
-							<option value="${regInfom.city}"<c:if test="${regInfom.city ne null}">selected="selected"</c:if>>${regInfom.city}</option>
-					</select>
+					<input type="text" class="form-control" id="city" value="${regInfom.city}"></li>
 					</li>
 					<li class="list-group-item"><strong>Pincode:-</strong>
-					<select class="form-control" id="mySelect"
-					
-					ng-model="pincode" ng-init="pincode'${regInfom.pincode}'">
-							<option value="">Select</option>
-							<option value="${regInfom.pincode}"<c:if test="${regInfom.pincode ne null}">selected="selected"</c:if>>${regInfom.pincode}</option>
-					</select>
+					<input type="text" class="form-control" id="pincode" value="${regInfom.pincode}"></li>
 					</li>
 					
 				 	<input type="submit" value="submit" onclick="updateShip('updateReg');" class="btn btn-theme pull-right">
@@ -351,9 +335,9 @@
 			js1.cas = cas;
 			js1.street = $('#street').val().trim();
 			js1.address = $('#address').val().trim();
-			js1.city = $('select#someselect option:selected').val();
-			js1.pincode = $('select#mySelect option:selected').val();
-			js1.state =  $('select#categories option:selected').val();
+			js1.city = $('#city').val().trim();
+			js1.pincode =$('#pincode').val().trim();
+			js1.state = $('#state').val().trim();
 			alert('state='+js1.state+'   city='+js1.city+' pincode='+js1.pincode);
 			if (js1.street != '') {
 				if (js1.address != '') {

@@ -23,23 +23,12 @@
 <!--JS-->	
 	<%@include file="mainJs.jsp"%>
 <!-- End JS -->
-
 <!--banner-->
-			
 	<div class="banner">
-	
 <div class="container">	
 		  <div class="wmuSlider example1">
 			   <div class="wmuSliderWrapper">
 			<%@include file="master/bannerSlider.jsp"%>
-			
-			
-			
-			
-			
-			
-			 
-			 
 			</div>
 			 <ul class="wmuSliderPagination">
                 	<li><a href="#" class="">0</a></li>
@@ -51,7 +40,7 @@
 		  <script src="js/jquery.wmuSlider.js"></script> 
 			  <script>
        			$('.example1').wmuSlider({
-					 pagination : true,
+					 pagination : false,
 					 nav : false,
 				});         
    		     </script> 	
@@ -79,50 +68,34 @@
 		<!-- //requried-jsfiles-for owl -->
 			<div id="owl-demo" class="owl-carousel text-center">
 			<%@include file="master/fetureProduct.jsp"%>
-			
-			
-
-
-			
-
-			
-
-			
-
-			
-
-
-
-			
-			
 				<div class="clearfix"> </div>
 			</div>
-			
 		</div>
-		
 		 </div>
 			</div>
 			<div class="container">
 		<div class="product">
 		<h2 class="new">NEW ARRIVALS</h2>
-						
-			<nav>
-                    <ul class="pager">
-                            <li><a href="javascript:void(0);" onclick="paging('prev')" class="waves-effect">Previous</a></li>
-                               <li><a href="javascript:void(0);"  onclick="paging('nxt')" class="waves-effect">Next</a></li>
-                             </ul>
-           </nav>
-			
-				<div class="clearfix"> </div>
+				
+		
+		<div class="all">
 		</div>
-		<!---->	
+		<!---->
 		</div>
 			<div class="clearfix"> </div>
 		</div>
+			
+					
+			<nav>
+		<ul class="pager">
+			<li><a href="javascript:void(0);" onclick="pageing('prev')"
+				class="previos">Previous</a></li>
+			<li><a href="javascript:void(0);" onclick="pageing('nxt')"
+				class="nextu">Next</a></li>
+		</ul>
+		</nav>
 		<!--      -feature product---- -->
 	<!---->
-	
-			
 			<div class="content-bottom">
 				<div class="col-md-8 latter">
 					<h6>NEWSLETTER</h6>
@@ -131,7 +104,6 @@
 					<div class="clearfix"> </div>
 				</div>
 				<div class="col-md-4 latter-right">
-					
 						<form>
 						<div class="join">
 							<input type="text" value="your email here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your email here';}">
@@ -139,17 +111,12 @@
 						</div>
 							<input type="submit" value="join us">
 						</form>
-						
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-
 	<!---->
-		
-	
 		<!-- partcipate company-->
 	<%@include file="participate.jsp"%>
-	
 	</div>
 </div>
 	<!--footer-->	
@@ -162,14 +129,13 @@
 
 <script>
 var num=0;
-var count=1;
+var count=0;
 $(document).ready(function() {
 	$('#simpleCart_quantity').text('0');
 	$('#simpleCart_total').text('0');
-	window.onload = paging('prev');
+	//window.onload = paging('prev');
 	loadCart();
-	
-	
+	 pageing();
 });
 
 function paging(cate){
@@ -211,21 +177,74 @@ function get(){
 			   
 		
 <script type="text/javascript">  
-function pageing(){
+var num = 0;
+var count = 0;
+var pageSize = 0;
+$(document).ready(function() {
+	$('#simpleCart_quantity').text('0');
+	$('#simpleCart_total').text('0');
+	loadCart();
+	pageing('load');
+});
+function pageing(cate){
+	$(".next").hide();
+	$(".previous").hide();
                 $.ajax({  
                     url:'paging_response',  
                     type:'post',  
                     dataType: 'json',
                     data : {
-        				_count : count
+        				_count : count,
+        				_query:"all"
+        				
         			},
                     success: function(data) {  
                     	console.log(data.name);
-                    	$('.product h2').html(data.name);
+                    	$('.all').html(data.name);
                       //  $('#name').val(data.name);  
-                      // $('#email').val(data.email);  
+                      // $('#email').val(data.email);
+                    	count = data.row_count;
+    					pag(cate);
                     }  
                 });   
+}
+
+function pag(cate) {
+	if (cate == 'load') {
+		if (num == 0)
+			$(".previos").hide();
+		if(count==0){
+			$(".nextu").hide();
+			$(".previos").hide();
+		}
+	}
+	if(cate=='prev')
+{
+		 if(count==num & num>1){
+			$(".nextu").show();
+			$(".previos").show();
+			num--;
+		}
+		 else  if(count>num & num>0){
+				$(".nextu").show();
+				$(".previos").show();
+				num--;
+				if(num==0){
+					$(".previos").hide();
+				}
+			}
+}
+	if(cate=='nxt'){
+		if (count > num) {
+			$(".nextu").show();
+			$(".previos").show();
+			num++;
+		} 
+		else if(count == num & count>0){
+			$(".nextu").hide();
+			$(".previos").show();
+		}
+	}
 }
 </script>			   
 			   

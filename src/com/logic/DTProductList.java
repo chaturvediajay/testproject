@@ -52,9 +52,9 @@ public class DTProductList {
 			query[2] = " FROM product p";
 			if (wh_con.length() > 5)
 				query[3] = " where " + wh_con;
-
+			AbstractClass ac=new AbstractClass();
 			System.out.println("dfsfsf   " + query[3].length() + " : " + query[0] + query[1] + query[2] + query[3]);
-			list = AbstractClass.listObj(query[0] + query[1] + query[2] + query[3], start, length);
+			list = ac.listObj(query[0] + query[1] + query[2] + query[3], start, length);
 
 			System.out.println("size " + list.size());
 			// count=list.size();
@@ -98,10 +98,13 @@ public class DTProductList {
 				query[3] += " id.uid= " + ls.getId();
 
 			/*---search in datatable textbox */
-			if (jdtm.getSearch_value().length() > 0)
+			if (jdtm.getSearch_value().length() > 0) {
+				if (ls.getAuthorize() != 1)
+					query[3] += " and ";
 				query[3] += " id.orderId LIKE '%" + jdtm.getSearch_value() + "%' or p.pkey like '%"
 						+ jdtm.getSearch_value() + "%'";
-			
+			}
+
 			if (query[3].length() > 5)
 				query[3] = " where" + query[3];
 
@@ -110,8 +113,9 @@ public class DTProductList {
 			query[2] = "SELECT (SELECT count(*) " + query[1] + query[3] + ") as ccount," + query[0] + query[1]
 					+ query[3] + query[4];
 
+			AbstractClass ac=new AbstractClass();
 			System.out.println(query[2]);
-			list = AbstractClass.listObj(query[2], start, length);
+			list = ac.listObj(query[2], start, length);
 
 			System.out.println("size " + list.size());
 

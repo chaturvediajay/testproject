@@ -40,7 +40,6 @@
 							<li><p>Size : ${fp.size}</p></li>
 							<li><p>color : ${fp.color}</p></li>
 							<li></li>
-							
 							<li><p>Qty : <select data-width="80px"
 												id="qtyId" class="selectpicker"
 												onchange="changeLayer(this,${num},'${fp.pkey}${fp.ppid}','cart_update','html');">
@@ -57,8 +56,6 @@
 							 <p id="num${num}">Charges-- : ${currency_dollar}${fp.qty*fp.smrp}</p>
 							 <span>Delivered in 2-3 bussiness days</span>
 							 <c:set var="total" value="${total+(fp.qty*fp.smrp)}" />
-							 
-							 
 							 <div class="clearfix"></div>
 				        </div>	
 					   </div>
@@ -67,22 +64,9 @@
 				  </div>
 			 </div>
 			 <c:set var="num" value="${num+1}" />
-			 
-			 
-		 
-			 
-			 
 			 </c:forEach>
 		</c:if>	
-		
-		
 		 </div>   
-		 
-		 
-
-
-
-
 <c:if test="${charge_free > total}">
 <c:set var="gr_total" value="${total+num*charge_corrier}" />
 </c:if>
@@ -173,6 +157,7 @@
 	var obj = JSON.stringify(res.data);
 		var jsonobject = JSON.parse(obj);
 		var d=JSON.parse(jsonobject);
+		console.log('-------  '+d.total);
 		$('.total').html('&#x24;'+d.total);
 		$('#num'+d.num).html('Charges-- : &#x24;'+(d.smrp*d.qty));
 		$('#idtotal').html('&#x24;'+(parseInt(d.total)+parseInt(d.ship)));

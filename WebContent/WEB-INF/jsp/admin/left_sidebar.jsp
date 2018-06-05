@@ -39,34 +39,33 @@
 				<li class="header">MAIN NAVIGATION</li>
 				<li class="active"><a
 					href="${pageContext.request.contextPath}/admin/"
-					class="toggled waves-effect waves-block"> <i
-						class="material-icons">home</i> <span>Home</span>
+					class="toggled waves-effect waves-block"> <span class="glyphicon glyphicon-home"></span><span>Home</span>
 				</a></li>
 				<li><a
 					href="${pageContext.request.contextPath}/admin/menuEntry"
-					class="waves-effect waves-block"> <i class="material-icons">text_fields</i>
+					class="waves-effect waves-block"> <span class="glyphicon glyphicon-menu-hamburger"></span>
 						<span>Add Menus</span>
 				</a></li>
 				<li><a
 					href="${pageContext.request.contextPath}/admin/productRegistration"
-					class="waves-effect waves-block"> <i class="material-icons">text_fields</i>
+					class="waves-effect waves-block"> <span class="glyphicon glyphicon-registration-mark"></span>
 						<span>Register New Product</span>
 				</a></li>
 
 				<li><a
 					href="${pageContext.request.contextPath}/admin/product_list"
-					class="waves-effect waves-block"> <i class="material-icons">text_fields</i>
+					class="waves-effect waves-block"><span class="glyphicon glyphicon-th-list"></span>
 						<span>Product List</span>
 				</a></li>
 				<li><a
 					href="${pageContext.request.contextPath}/admin/orderList"
-					class="waves-effect waves-block"> <i class="material-icons">text_fields</i>
+					class="waves-effect waves-block"> <span class="glyphicon glyphicon-sort-by-attributes"></span>
 						<span>Order List</span>
 				</a></li>
 				
 				<li><a
 					href="${pageContext.request.contextPath}/admin/slide_control"
-					class="waves-effect waves-block"> <i class="material-icons">text_fields</i>
+					class="waves-effect waves-block"><span class="glyphicon glyphicon-gift"></span>
 						<span>slide control</span>
 				</a></li>
 				
@@ -99,7 +98,7 @@
 	<!-- Footer -->
 	<div class="legal">
 		<div class="copyright">
-			© 2016 - 2018 <a href="javascript:void(0);">blagot infotech</a>.
+			© 2017 - 2018 <a href="javascript:void(0);">blagot infotech</a>.
 		</div>
 		<div class="version">
 			<b>Version: </b> 1.0.2

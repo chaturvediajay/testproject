@@ -24,10 +24,9 @@ import com.nonModel.SlideHome;
 @WebServlet("/paging_response")
 public class paging_response extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
+	private int start = 0;
+	private int length = 16;
+	private int row_count=0;
 	public paging_response() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -45,16 +44,24 @@ public class paging_response extends HttpServlet {
 			String count = request.getParameter("_count").trim();
 			
 			System.out.println("_count: "+count);
-			List<SlideHome> lsh= ProductLogic.getProductHome("all", "",Integer.parseInt(count),16);
+			List<SlideHome> lsh= ProductLogic.getProductHome("all", "",Integer.parseInt(count),length);
 			PrintWriter out = response.getWriter();
 			JSONObject json = new JSONObject();
 			json.put("name", ProductPagingHome.getProductShow(lsh,request));
-			json.put("email", "codesstore@blogspot.com");
+			json.put("row_count", row_count);
 			out.print(json);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	private int count(List<SlideHome> lsh){
+		for(SlideHome sh:lsh){
+			row_count=sh.getCount();
+			
+		}
+			
+		return 0;
 	}
 
 }

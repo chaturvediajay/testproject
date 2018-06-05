@@ -2608,429 +2608,1070 @@
 2018-05-15 13:50:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
 2018-05-15 13:50:01 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
 2018-05-15 13:50:01 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
-2018-05-27 14:11:20 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
-2018-05-27 14:11:20 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
-2018-05-27 14:11:20 INFO  Environment:239 - HHH000206: hibernate.properties not found
-2018-05-27 14:11:20 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
-2018-05-27 14:11:20 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
-2018-05-27 14:11:20 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
-2018-05-27 14:11:21 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
-2018-05-27 14:11:21 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
-2018-05-27 14:11:21 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
-2018-05-27 14:11:21 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
-2018-05-27 14:11:21 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
-2018-05-27 14:11:21 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
-2018-05-27 14:11:21 INFO  MLog:92 - MLog clients using log4j logging.
-2018-05-27 14:11:22 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
-2018-05-27 14:11:22 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2018-05-27 14:11:22 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
-2018-05-27 14:11:22 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
-2018-05-27 14:11:22 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
-2018-05-27 14:11:23 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
-2018-05-27 14:11:23 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
-2018-05-27 14:11:23 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@a65a3b90 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@a7737f77 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15x9v18ls17drqp4m|1b250b4, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@85e64ec5 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge15x9v18ls17drqp4m|3f1134, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge15x9v18ls17drqp4m|1ae2fd0, numHelperThreads -> 3 ]
-2018-05-27 14:11:24 INFO  SchemaUpdate:205 - HHH000396: Updating schema
-2018-05-27 14:11:24 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
-2018-05-27 14:11:24 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
-2018-05-27 14:11:24 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:11:24 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:11:24 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
-2018-05-27 14:11:24 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
-2018-05-27 14:11:24 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:11:24 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:11:24 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
-2018-05-27 14:11:24 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
-2018-05-27 14:11:24 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:11:24 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:11:24 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
-2018-05-27 14:11:24 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
-2018-05-27 14:11:24 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:11:24 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:11:24 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
-2018-05-27 14:11:24 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
-2018-05-27 14:11:24 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:11:24 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:11:24 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
-2018-05-27 14:11:24 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
-2018-05-27 14:11:24 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:11:24 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:11:24 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
-2018-05-27 14:11:24 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
-2018-05-27 14:11:24 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:11:24 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
-2018-05-27 14:11:24 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
-2018-05-27 14:11:24 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
-2018-05-27 14:11:24 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:11:24 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
-2018-05-27 14:11:24 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
-2018-05-27 14:11:24 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
-2018-05-27 14:11:24 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:11:24 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
-2018-05-27 14:11:24 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
-2018-05-27 14:11:24 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
-2018-05-27 14:11:24 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:11:24 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:11:24 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
-2018-05-27 14:11:24 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
-2018-05-27 14:11:24 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:11:24 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:11:24 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
-2018-05-27 14:11:24 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
-2018-05-27 14:11:24 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:11:24 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:11:24 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
-2018-05-27 14:18:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
-2018-05-27 14:18:59 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
-2018-05-27 14:18:59 INFO  Environment:239 - HHH000206: hibernate.properties not found
-2018-05-27 14:18:59 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
-2018-05-27 14:18:59 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
-2018-05-27 14:18:59 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
-2018-05-27 14:18:59 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
-2018-05-27 14:18:59 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
-2018-05-27 14:18:59 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
-2018-05-27 14:18:59 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
-2018-05-27 14:18:59 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
-2018-05-27 14:18:59 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
-2018-05-27 14:18:59 INFO  MLog:92 - MLog clients using log4j logging.
-2018-05-27 14:19:00 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
-2018-05-27 14:19:00 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2018-05-27 14:19:00 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
-2018-05-27 14:19:00 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
-2018-05-27 14:19:00 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
-2018-05-27 14:19:00 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
-2018-05-27 14:19:00 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
-2018-05-27 14:19:00 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@dd6f4ec5 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@77b6de89 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15x9v18m1uirffk95w|c5cc4c, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@dcc0b856 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge15x9v18m1uirffk95w|10abc94, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge15x9v18m1uirffk95w|1177a4b, numHelperThreads -> 3 ]
-2018-05-27 14:19:01 INFO  SchemaUpdate:205 - HHH000396: Updating schema
-2018-05-27 14:19:01 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
-2018-05-27 14:19:01 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
-2018-05-27 14:19:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:19:01 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:19:01 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
-2018-05-27 14:19:01 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
-2018-05-27 14:19:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:19:01 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:19:01 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
-2018-05-27 14:19:01 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
-2018-05-27 14:19:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:19:01 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:19:01 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
-2018-05-27 14:19:01 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
-2018-05-27 14:19:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:19:01 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:19:01 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
-2018-05-27 14:19:01 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
-2018-05-27 14:19:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:19:01 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:19:01 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
-2018-05-27 14:19:01 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
-2018-05-27 14:19:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:19:01 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:19:01 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
-2018-05-27 14:19:01 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
-2018-05-27 14:19:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:19:01 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
-2018-05-27 14:19:01 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
-2018-05-27 14:19:01 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
-2018-05-27 14:19:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:19:01 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
-2018-05-27 14:19:01 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
-2018-05-27 14:19:01 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
-2018-05-27 14:19:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:19:01 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
-2018-05-27 14:19:01 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
-2018-05-27 14:19:01 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
-2018-05-27 14:19:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:19:01 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:19:01 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
-2018-05-27 14:19:01 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
-2018-05-27 14:19:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:19:01 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:19:01 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
-2018-05-27 14:19:01 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
-2018-05-27 14:19:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:19:01 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:19:01 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
-2018-05-27 14:20:02 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
-2018-05-27 14:20:02 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
-2018-05-27 14:20:02 INFO  Environment:239 - HHH000206: hibernate.properties not found
-2018-05-27 14:20:02 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
-2018-05-27 14:20:02 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
-2018-05-27 14:20:02 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
-2018-05-27 14:20:02 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
-2018-05-27 14:20:02 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
-2018-05-27 14:20:02 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
-2018-05-27 14:20:02 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
-2018-05-27 14:20:02 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
-2018-05-27 14:20:02 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
-2018-05-27 14:20:02 INFO  MLog:92 - MLog clients using log4j logging.
-2018-05-27 14:20:02 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
-2018-05-27 14:20:02 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2018-05-27 14:20:02 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
-2018-05-27 14:20:03 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
-2018-05-27 14:20:03 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
-2018-05-27 14:20:03 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
-2018-05-27 14:20:03 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
-2018-05-27 14:20:03 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@7b0c902 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@e46ea8ac [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15x9v18m374e7qekl7|c5cc4c, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@7023293 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge15x9v18m374e7qekl7|10abc94, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge15x9v18m374e7qekl7|1177a4b, numHelperThreads -> 3 ]
-2018-05-27 14:20:04 INFO  SchemaUpdate:205 - HHH000396: Updating schema
-2018-05-27 14:20:04 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
-2018-05-27 14:20:04 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
-2018-05-27 14:20:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:20:04 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:20:04 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
-2018-05-27 14:20:04 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
-2018-05-27 14:20:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:20:04 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:20:04 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
-2018-05-27 14:20:04 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
-2018-05-27 14:20:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:20:04 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:20:04 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
-2018-05-27 14:20:04 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
-2018-05-27 14:20:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:20:04 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:20:04 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
-2018-05-27 14:20:04 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
-2018-05-27 14:20:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:20:04 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:20:04 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
-2018-05-27 14:20:04 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
-2018-05-27 14:20:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:20:04 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:20:04 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
-2018-05-27 14:20:04 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
-2018-05-27 14:20:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:20:04 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
-2018-05-27 14:20:04 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
-2018-05-27 14:20:04 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
-2018-05-27 14:20:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:20:04 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
-2018-05-27 14:20:04 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
-2018-05-27 14:20:04 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
-2018-05-27 14:20:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:20:04 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
-2018-05-27 14:20:04 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
-2018-05-27 14:20:04 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
-2018-05-27 14:20:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:20:04 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:20:04 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
-2018-05-27 14:20:04 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
-2018-05-27 14:20:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:20:04 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:20:04 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
-2018-05-27 14:20:04 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
-2018-05-27 14:20:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:20:04 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:20:04 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
-2018-05-27 14:21:09 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
-2018-05-27 14:21:09 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
-2018-05-27 14:21:09 INFO  Environment:239 - HHH000206: hibernate.properties not found
-2018-05-27 14:21:09 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
-2018-05-27 14:21:09 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
-2018-05-27 14:21:09 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
-2018-05-27 14:21:09 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
-2018-05-27 14:21:09 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
-2018-05-27 14:21:10 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
-2018-05-27 14:21:10 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
-2018-05-27 14:21:10 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
-2018-05-27 14:21:10 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
-2018-05-27 14:21:10 INFO  MLog:92 - MLog clients using log4j logging.
-2018-05-27 14:21:10 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
-2018-05-27 14:21:10 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2018-05-27 14:21:10 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
-2018-05-27 14:21:10 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
-2018-05-27 14:21:10 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
-2018-05-27 14:21:11 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
-2018-05-27 14:21:11 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
-2018-05-27 14:21:11 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@b41780cc [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@23cccfa2 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15x9v18m4nal1euk834|c5cc4c, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@b368ea5d [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge15x9v18m4nal1euk834|10abc94, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge15x9v18m4nal1euk834|1177a4b, numHelperThreads -> 3 ]
-2018-05-27 14:21:11 INFO  SchemaUpdate:205 - HHH000396: Updating schema
-2018-05-27 14:21:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
-2018-05-27 14:21:11 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
-2018-05-27 14:21:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
-2018-05-27 14:21:11 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
-2018-05-27 14:21:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
-2018-05-27 14:21:11 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
-2018-05-27 14:21:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
-2018-05-27 14:21:11 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
-2018-05-27 14:21:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
-2018-05-27 14:21:11 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
-2018-05-27 14:21:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
-2018-05-27 14:21:11 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
-2018-05-27 14:21:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
-2018-05-27 14:21:11 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
-2018-05-27 14:21:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:11 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
-2018-05-27 14:21:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
-2018-05-27 14:21:11 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
-2018-05-27 14:21:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:11 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
-2018-05-27 14:21:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
-2018-05-27 14:21:11 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
-2018-05-27 14:21:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:11 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
-2018-05-27 14:21:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
-2018-05-27 14:21:11 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
-2018-05-27 14:21:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
-2018-05-27 14:21:11 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
-2018-05-27 14:21:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
-2018-05-27 14:21:11 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
-2018-05-27 14:21:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:11 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
-2018-05-27 14:21:52 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
-2018-05-27 14:21:52 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
-2018-05-27 14:21:52 INFO  Environment:239 - HHH000206: hibernate.properties not found
-2018-05-27 14:21:52 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
-2018-05-27 14:21:52 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
-2018-05-27 14:21:52 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
-2018-05-27 14:21:52 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
-2018-05-27 14:21:52 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
-2018-05-27 14:21:52 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
-2018-05-27 14:21:52 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
-2018-05-27 14:21:52 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
-2018-05-27 14:21:52 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
-2018-05-27 14:21:52 INFO  MLog:92 - MLog clients using log4j logging.
-2018-05-27 14:21:52 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
-2018-05-27 14:21:52 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2018-05-27 14:21:52 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
-2018-05-27 14:21:53 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
-2018-05-27 14:21:53 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
-2018-05-27 14:21:53 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
-2018-05-27 14:21:53 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
-2018-05-27 14:21:53 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@65da9026 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@7c1d6d08 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15x9v18m5k0h1fx8a0b|c5cc4c, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@652bf9b7 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge15x9v18m5k0h1fx8a0b|10abc94, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge15x9v18m5k0h1fx8a0b|1177a4b, numHelperThreads -> 3 ]
-2018-05-27 14:21:54 INFO  SchemaUpdate:205 - HHH000396: Updating schema
-2018-05-27 14:21:54 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
-2018-05-27 14:21:54 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
-2018-05-27 14:21:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:54 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:54 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
-2018-05-27 14:21:54 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
-2018-05-27 14:21:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:54 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:54 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
-2018-05-27 14:21:54 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
-2018-05-27 14:21:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:54 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:54 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
-2018-05-27 14:21:54 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
-2018-05-27 14:21:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:54 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:54 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
-2018-05-27 14:21:54 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
-2018-05-27 14:21:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:54 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:54 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
-2018-05-27 14:21:54 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
-2018-05-27 14:21:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:54 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:54 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
-2018-05-27 14:21:54 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
-2018-05-27 14:21:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:54 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
-2018-05-27 14:21:54 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
-2018-05-27 14:21:54 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
-2018-05-27 14:21:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:54 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
-2018-05-27 14:21:54 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
-2018-05-27 14:21:54 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
-2018-05-27 14:21:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:54 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
-2018-05-27 14:21:54 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
-2018-05-27 14:21:54 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
-2018-05-27 14:21:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:54 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:54 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
-2018-05-27 14:21:54 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
-2018-05-27 14:21:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:54 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:54 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
-2018-05-27 14:21:54 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
-2018-05-27 14:21:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:21:54 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:21:54 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
-2018-05-27 14:24:00 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
-2018-05-27 14:24:00 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
-2018-05-27 14:24:00 INFO  Environment:239 - HHH000206: hibernate.properties not found
-2018-05-27 14:24:00 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
-2018-05-27 14:24:00 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
-2018-05-27 14:24:00 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
-2018-05-27 14:24:00 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
-2018-05-27 14:24:00 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
-2018-05-27 14:24:00 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
-2018-05-27 14:24:00 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
-2018-05-27 14:24:00 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
-2018-05-27 14:24:00 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
-2018-05-27 14:24:01 INFO  MLog:92 - MLog clients using log4j logging.
-2018-05-27 14:24:01 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
-2018-05-27 14:24:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2018-05-27 14:24:01 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
-2018-05-27 14:24:01 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
-2018-05-27 14:24:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
-2018-05-27 14:24:02 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
-2018-05-27 14:24:02 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
-2018-05-27 14:24:02 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@25f00280 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@50c3476e [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15x9v18m8b4kaq4f32|c5cc4c, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@25416c11 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge15x9v18m8b4kaq4f32|10abc94, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge15x9v18m8b4kaq4f32|1177a4b, numHelperThreads -> 3 ]
-2018-05-27 14:24:02 INFO  SchemaUpdate:205 - HHH000396: Updating schema
-2018-05-27 14:24:02 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
-2018-05-27 14:24:02 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
-2018-05-27 14:24:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:24:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:24:02 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
-2018-05-27 14:24:02 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
-2018-05-27 14:24:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:24:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:24:02 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
-2018-05-27 14:24:02 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
-2018-05-27 14:24:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:24:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:24:02 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
-2018-05-27 14:24:02 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
-2018-05-27 14:24:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:24:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:24:02 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
-2018-05-27 14:24:02 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
-2018-05-27 14:24:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:24:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:24:02 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
-2018-05-27 14:24:02 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
-2018-05-27 14:24:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:24:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:24:02 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
-2018-05-27 14:24:02 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
-2018-05-27 14:24:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:24:02 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
-2018-05-27 14:24:02 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
-2018-05-27 14:24:02 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
-2018-05-27 14:24:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:24:02 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
-2018-05-27 14:24:02 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
-2018-05-27 14:24:02 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
-2018-05-27 14:24:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:24:02 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
-2018-05-27 14:24:02 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
-2018-05-27 14:24:02 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
-2018-05-27 14:24:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:24:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:24:02 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
-2018-05-27 14:24:02 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
-2018-05-27 14:24:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:24:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:24:02 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
-2018-05-27 14:24:02 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
-2018-05-27 14:24:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
-2018-05-27 14:24:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
-2018-05-27 14:24:02 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 12:19:09 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 12:19:09 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 12:19:09 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 12:19:09 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 12:19:09 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 12:19:09 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 12:19:09 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 12:19:09 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 12:19:09 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 12:19:10 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 12:19:10 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 12:19:10 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 12:19:10 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 12:19:10 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 12:19:10 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 12:19:10 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 12:19:11 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 12:19:11 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 12:19:11 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 12:19:11 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 12:19:11 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@8d1b3254 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@97f2aac4 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge14m9v1bcnghgpr2xvu|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@6ac2130a [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge14m9v1bcnghgpr2xvu|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge14m9v1bcnghgpr2xvu|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 12:19:12 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 12:19:12 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 12:19:12 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 12:19:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:19:12 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:19:12 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 12:19:12 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 12:19:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:19:12 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:19:12 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 12:19:12 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 12:19:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:19:12 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:19:12 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 12:19:12 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 12:19:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:19:12 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:19:12 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 12:19:12 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 12:19:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:19:12 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:19:12 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 12:19:12 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 12:19:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:19:12 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:19:12 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 12:19:12 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 12:19:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:19:12 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 12:19:12 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 12:19:12 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 12:19:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:19:12 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 12:19:12 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 12:19:12 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 12:19:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:19:12 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 12:19:12 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 12:19:12 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 12:19:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:19:12 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:19:12 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 12:19:12 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 12:19:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:19:12 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:19:12 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 12:19:12 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 12:19:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:19:12 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:19:12 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 12:19:13 ERROR paging_search:108 - ProductLogic error(176)getProductHome  java.lang.ArrayIndexOutOfBoundsException: -1
+2018-05-29 12:20:09 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 12:20:09 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 12:20:09 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 12:20:09 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 12:20:09 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 12:20:09 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 12:20:09 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 12:20:09 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 12:20:09 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 12:20:09 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 12:20:09 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 12:20:09 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 12:20:09 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 12:20:10 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 12:20:10 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 12:20:10 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 12:20:10 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 12:20:10 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 12:20:11 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 12:20:11 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 12:20:11 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@3f717371 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@4a48ebe1 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge14m9v1bcoqbvw2d252|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@333f58d [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge14m9v1bcoqbvw2d252|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge14m9v1bcoqbvw2d252|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 12:20:11 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 12:20:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 12:20:11 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 12:20:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:20:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:20:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 12:20:11 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 12:20:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:20:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:20:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 12:20:11 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 12:20:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:20:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:20:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 12:20:11 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 12:20:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:20:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:20:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 12:20:11 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 12:20:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:20:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:20:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 12:20:11 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 12:20:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:20:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:20:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 12:20:11 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 12:20:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:20:11 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 12:20:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 12:20:11 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 12:20:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:20:11 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 12:20:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 12:20:11 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 12:20:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:20:11 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 12:20:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 12:20:11 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 12:20:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:20:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:20:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 12:20:11 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 12:20:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:20:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:20:11 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 12:20:11 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 12:20:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 12:20:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 12:20:11 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 15:05:54 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 15:05:54 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 15:05:54 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 15:05:54 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 15:05:54 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 15:05:54 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 15:05:54 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 15:05:54 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 15:05:54 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 15:05:54 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 15:05:54 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 15:05:54 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 15:05:55 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 15:05:55 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 15:05:55 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 15:05:55 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 15:05:56 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 15:05:56 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 15:05:56 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 15:05:56 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 15:05:56 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@2798b79e [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@3270300e [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9v1bilwe4wkuw54|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@1ff53700 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9v1bilwe4wkuw54|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9v1bilwe4wkuw54|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 15:05:57 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 15:05:57 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 15:05:57 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 15:05:57 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:05:57 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:05:57 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 15:05:57 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 15:05:57 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:05:57 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:05:57 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 15:05:57 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 15:05:57 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:05:57 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:05:57 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 15:05:57 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 15:05:57 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:05:57 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:05:57 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 15:05:57 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 15:05:57 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:05:57 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:05:57 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 15:05:57 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 15:05:57 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:05:57 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:05:57 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 15:05:57 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 15:05:57 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:05:57 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 15:05:57 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 15:05:57 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 15:05:57 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:05:57 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 15:05:57 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 15:05:57 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 15:05:57 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:05:57 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 15:05:57 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 15:05:57 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 15:05:57 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:05:57 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:05:57 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 15:05:57 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 15:05:57 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:05:57 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:05:57 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 15:05:57 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 15:05:57 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:05:57 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:05:57 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 15:06:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 15:06:40 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 15:06:40 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 15:06:40 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 15:06:40 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 15:06:40 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 15:06:40 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 15:06:40 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 15:06:41 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 15:06:41 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 15:06:41 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 15:06:41 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 15:06:41 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 15:06:41 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 15:06:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 15:06:41 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 15:06:41 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 15:06:41 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 15:06:42 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 15:06:42 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 15:06:42 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@717cb701 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@7c542f71 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9v1bimvwtrids06|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@129123fd [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9v1bimvwtrids06|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9v1bimvwtrids06|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 15:06:42 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 15:06:42 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 15:06:42 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 15:06:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:06:42 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:06:42 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 15:06:42 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 15:06:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:06:42 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:06:42 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 15:06:42 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 15:06:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:06:42 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:06:42 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 15:06:42 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 15:06:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:06:42 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:06:42 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 15:06:42 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 15:06:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:06:42 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:06:42 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 15:06:42 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 15:06:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:06:42 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:06:42 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 15:06:42 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 15:06:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:06:42 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 15:06:42 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 15:06:42 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 15:06:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:06:42 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 15:06:42 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 15:06:42 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 15:06:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:06:42 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 15:06:42 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 15:06:42 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 15:06:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:06:42 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:06:42 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 15:06:42 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 15:06:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:06:42 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:06:42 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 15:06:42 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 15:06:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:06:42 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:06:42 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 15:11:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 15:11:57 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 15:11:57 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 15:11:57 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 15:11:57 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 15:11:57 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 15:11:57 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 15:11:57 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 15:11:57 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 15:11:57 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 15:11:57 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 15:11:57 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 15:11:57 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 15:11:57 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 15:11:57 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 15:11:57 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 15:11:58 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 15:11:58 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 15:11:58 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 15:11:58 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 15:11:58 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@616fbef8 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@6c473768 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge14m9v1bitnyij6bkt2|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@20ff1ae6 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge14m9v1bitnyij6bkt2|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge14m9v1bitnyij6bkt2|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 15:11:59 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 15:11:59 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 15:11:59 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 15:11:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:11:59 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:11:59 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 15:11:59 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 15:11:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:11:59 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:11:59 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 15:11:59 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 15:11:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:11:59 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:11:59 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 15:11:59 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 15:11:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:11:59 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:11:59 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 15:11:59 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 15:11:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:11:59 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:11:59 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 15:11:59 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 15:11:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:11:59 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:11:59 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 15:11:59 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 15:11:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:11:59 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 15:11:59 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 15:11:59 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 15:11:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:11:59 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 15:11:59 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 15:11:59 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 15:11:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:11:59 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 15:11:59 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 15:11:59 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 15:11:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:11:59 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:11:59 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 15:11:59 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 15:11:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:11:59 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:11:59 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 15:11:59 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 15:11:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:11:59 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:11:59 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 15:15:28 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 15:15:28 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 15:15:28 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 15:15:28 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 15:15:28 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 15:15:28 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 15:15:28 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 15:15:28 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 15:15:28 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 15:15:28 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 15:15:28 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 15:15:28 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 15:15:28 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 15:15:29 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 15:15:29 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 15:15:29 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 15:15:29 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 15:15:29 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 15:15:29 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 15:15:29 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 15:15:29 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@9b6626ae [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@a63d9f1e [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge14m9v1biy6uj1lps142|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@25d5a9f0 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge14m9v1biy6uj1lps142|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge14m9v1biy6uj1lps142|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 15:15:30 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 15:15:30 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 15:15:30 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 15:15:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:15:30 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:15:30 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 15:15:30 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 15:15:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:15:30 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:15:30 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 15:15:30 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 15:15:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:15:30 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:15:30 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 15:15:30 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 15:15:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:15:30 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:15:30 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 15:15:30 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 15:15:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:15:30 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:15:30 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 15:15:30 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 15:15:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:15:30 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:15:30 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 15:15:30 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 15:15:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:15:30 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 15:15:30 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 15:15:30 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 15:15:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:15:30 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 15:15:30 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 15:15:30 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 15:15:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:15:30 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 15:15:30 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 15:15:30 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 15:15:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:15:30 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:15:30 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 15:15:30 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 15:15:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:15:30 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:15:30 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 15:15:30 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 15:15:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:15:30 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:15:30 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 15:16:45 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 15:16:45 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 15:16:45 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 15:16:45 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 15:16:45 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 15:16:45 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 15:16:45 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 15:16:45 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 15:16:45 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 15:16:45 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 15:16:45 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 15:16:45 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 15:16:45 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 15:16:46 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 15:16:46 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 15:16:46 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 15:16:46 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 15:16:46 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 15:16:47 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 15:16:47 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 15:16:47 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@6a23b30a [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@74fb2b7a [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge14m9v1bizueu1scrfyj|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@2ec9a914 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge14m9v1bizueu1scrfyj|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge14m9v1bizueu1scrfyj|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 15:16:47 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 15:16:47 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 15:16:47 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 15:16:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:16:47 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:16:47 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 15:16:47 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 15:16:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:16:47 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:16:47 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 15:16:47 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 15:16:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:16:47 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:16:47 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 15:16:47 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 15:16:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:16:47 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:16:47 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 15:16:47 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 15:16:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:16:47 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:16:47 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 15:16:47 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 15:16:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:16:47 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:16:47 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 15:16:47 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 15:16:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:16:47 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 15:16:47 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 15:16:47 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 15:16:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:16:47 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 15:16:47 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 15:16:47 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 15:16:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:16:47 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 15:16:47 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 15:16:47 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 15:16:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:16:47 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:16:47 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 15:16:47 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 15:16:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:16:47 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:16:47 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 15:16:47 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 15:16:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:16:47 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:16:47 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 15:18:42 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 15:18:42 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 15:18:42 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 15:18:42 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 15:18:42 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 15:18:42 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 15:18:42 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 15:18:42 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 15:18:42 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 15:18:42 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 15:18:42 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 15:18:42 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 15:18:42 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 15:18:42 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 15:18:42 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 15:18:42 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 15:18:43 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 15:18:43 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 15:18:43 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 15:18:43 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 15:18:43 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@34770ff6 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@3f4e8866 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge14m9v1bj2cftdt1jxj|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@aee1e9a8 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge14m9v1bj2cftdt1jxj|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge14m9v1bj2cftdt1jxj|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 15:18:44 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 15:18:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 15:18:44 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 15:18:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:18:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:18:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 15:18:44 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 15:18:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:18:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:18:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 15:18:44 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 15:18:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:18:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:18:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 15:18:44 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 15:18:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:18:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:18:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 15:18:44 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 15:18:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:18:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:18:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 15:18:44 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 15:18:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:18:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:18:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 15:18:44 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 15:18:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:18:44 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 15:18:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 15:18:44 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 15:18:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:18:44 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 15:18:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 15:18:44 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 15:18:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:18:44 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 15:18:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 15:18:44 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 15:18:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:18:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:18:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 15:18:44 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 15:18:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:18:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:18:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 15:18:44 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 15:18:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:18:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:18:44 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 15:19:56 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 15:19:56 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 15:19:56 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 15:19:56 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 15:19:56 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 15:19:56 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 15:19:56 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 15:19:56 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 15:19:56 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 15:19:57 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 15:19:57 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 15:19:57 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 15:19:57 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 15:19:57 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 15:19:57 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 15:19:57 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 15:19:57 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 15:19:57 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 15:19:58 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 15:19:58 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 15:19:58 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@cc126a5b [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@d6e9e2cb [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9v1bj3xzz1wcwgle|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@ab1dbe3 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9v1bj3xzz1wcwgle|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9v1bj3xzz1wcwgle|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 15:19:58 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 15:19:58 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 15:19:58 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 15:19:58 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:19:58 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:19:58 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 15:19:58 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 15:19:58 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:19:58 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:19:58 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 15:19:58 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 15:19:58 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:19:58 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:19:58 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 15:19:58 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 15:19:58 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:19:58 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:19:58 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 15:19:58 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 15:19:58 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:19:58 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:19:58 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 15:19:58 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 15:19:58 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:19:58 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:19:58 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 15:19:58 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 15:19:58 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:19:58 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 15:19:58 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 15:19:58 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 15:19:58 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:19:58 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 15:19:58 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 15:19:58 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 15:19:58 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:19:58 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 15:19:58 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 15:19:58 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 15:19:58 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:19:58 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:19:58 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 15:19:58 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 15:19:58 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:19:58 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:19:58 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 15:19:58 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 15:19:58 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:19:58 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:19:58 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 15:30:08 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 15:30:08 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 15:30:08 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 15:30:08 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 15:30:09 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 15:30:09 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 15:30:09 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 15:30:09 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 15:30:09 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 15:30:10 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 15:30:10 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 15:30:10 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 15:30:10 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 15:30:10 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 15:30:11 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 15:30:11 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 15:30:11 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 15:30:11 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 15:30:12 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 15:30:12 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 15:30:12 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@300b931a [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@3ae30b8a [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge14k9v1bjh39g1j88uit|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@25ddcb04 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge14k9v1bjh39g1j88uit|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge14k9v1bjh39g1j88uit|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 15:30:13 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 15:30:13 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 15:30:13 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 15:30:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:30:13 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:30:13 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 15:30:13 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 15:30:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:30:13 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:30:13 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 15:30:13 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 15:30:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:30:13 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:30:13 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 15:30:13 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 15:30:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:30:13 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:30:13 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 15:30:13 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 15:30:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:30:13 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:30:13 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 15:30:13 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 15:30:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:30:13 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:30:13 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 15:30:13 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 15:30:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:30:13 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 15:30:13 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 15:30:13 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 15:30:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:30:13 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 15:30:13 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 15:30:13 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 15:30:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:30:13 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 15:30:13 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 15:30:13 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 15:30:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:30:13 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:30:13 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 15:30:13 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 15:30:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:30:13 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:30:13 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 15:30:13 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 15:30:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:30:13 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:30:13 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 15:32:14 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 15:32:15 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 15:32:15 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 15:32:15 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 15:32:15 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 15:32:15 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 15:32:15 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 15:32:15 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 15:32:15 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 15:32:15 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 15:32:15 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 15:32:15 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 15:32:15 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 15:32:15 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 15:32:15 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 15:32:15 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 15:32:16 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 15:32:16 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 15:32:16 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 15:32:16 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 15:32:16 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@2ef0f717 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@39c86f87 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge14k9v1bjjrou1svvsmu|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@3a4e6a7 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge14k9v1bjjrou1svvsmu|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge14k9v1bjjrou1svvsmu|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 15:32:16 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 15:32:16 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 15:32:16 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 15:32:16 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:32:16 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:32:16 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 15:32:16 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 15:32:16 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:32:16 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:32:16 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 15:32:16 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 15:32:16 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:32:16 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:32:16 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 15:32:16 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 15:32:16 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:32:16 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:32:16 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 15:32:16 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 15:32:16 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:32:16 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:32:16 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 15:32:16 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 15:32:16 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:32:16 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:32:17 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 15:32:17 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 15:32:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:32:17 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 15:32:17 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 15:32:17 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 15:32:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:32:17 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 15:32:17 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 15:32:17 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 15:32:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:32:17 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 15:32:17 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 15:32:17 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 15:32:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:32:17 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:32:17 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 15:32:17 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 15:32:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:32:17 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:32:17 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 15:32:17 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 15:32:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:32:17 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:32:17 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 15:36:13 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 15:36:13 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 15:36:13 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 15:36:13 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 15:36:13 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 15:36:13 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 15:36:13 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 15:36:13 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 15:36:13 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 15:36:13 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 15:36:13 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 15:36:13 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 15:36:13 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 15:36:14 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 15:36:14 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 15:36:14 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 15:36:14 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 15:36:14 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 15:36:14 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 15:36:14 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 15:36:14 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@66828afe [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@715a036e [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge14k9v1bjovn1dt6kg8|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@be45cfa0 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge14k9v1bjovn1dt6kg8|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge14k9v1bjovn1dt6kg8|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 15:36:15 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 15:36:15 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 15:36:15 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 15:36:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:36:15 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:36:15 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 15:36:15 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 15:36:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:36:15 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:36:15 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 15:36:15 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 15:36:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:36:15 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:36:15 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 15:36:15 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 15:36:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:36:15 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:36:15 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 15:36:15 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 15:36:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:36:15 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:36:15 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 15:36:15 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 15:36:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:36:15 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:36:15 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 15:36:15 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 15:36:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:36:15 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 15:36:15 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 15:36:15 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 15:36:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:36:15 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 15:36:15 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 15:36:15 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 15:36:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:36:15 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 15:36:15 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 15:36:15 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 15:36:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:36:15 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:36:15 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 15:36:15 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 15:36:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:36:15 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:36:15 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 15:36:15 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 15:36:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:36:15 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:36:15 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 15:45:54 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 15:45:54 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 15:45:54 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 15:45:54 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 15:45:54 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 15:45:54 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 15:45:54 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 15:45:54 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 15:45:54 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 15:45:54 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 15:45:54 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 15:45:54 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 15:45:54 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 15:45:55 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 15:45:55 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 15:45:55 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 15:45:55 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 15:45:55 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 15:45:56 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 15:45:56 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 15:45:56 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@e806079 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@1957d8e9 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge14k9v1bk1bt7u5a6hy|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@1602a985 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge14k9v1bk1bt7u5a6hy|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge14k9v1bk1bt7u5a6hy|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 15:45:56 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 15:45:56 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 15:45:56 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 15:45:56 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:45:56 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:45:56 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 15:45:56 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 15:45:56 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:45:56 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:45:56 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 15:45:56 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 15:45:56 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:45:56 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:45:56 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 15:45:56 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 15:45:56 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:45:56 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:45:56 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 15:45:56 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 15:45:56 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:45:56 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:45:56 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 15:45:56 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 15:45:56 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:45:56 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:45:56 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 15:45:56 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 15:45:56 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:45:56 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 15:45:56 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 15:45:56 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 15:45:56 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:45:56 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 15:45:56 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 15:45:56 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 15:45:56 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:45:56 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 15:45:56 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 15:45:56 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 15:45:56 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:45:56 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:45:56 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 15:45:56 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 15:45:56 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:45:56 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:45:56 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 15:45:56 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 15:45:56 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:45:56 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:45:56 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 15:45:57 ERROR AbstractClass:318 - abstrack error(292)listObj  org.hibernate.loader.custom.NonUniqueDiscoveredSqlAliasException: Encountered a duplicated sql alias [title] during auto-discovery of a native-sql query
+2018-05-29 15:46:21 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 15:46:21 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 15:46:21 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 15:46:21 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 15:46:21 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 15:46:21 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 15:46:21 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 15:46:21 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 15:46:21 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 15:46:21 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 15:46:21 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 15:46:21 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 15:46:21 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 15:46:22 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 15:46:22 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 15:46:22 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 15:46:22 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 15:46:22 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 15:46:23 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 15:46:23 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 15:46:23 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@8034d49b [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@8b0c4d0b [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge14k9v1bk1wwew8ua83|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@dadcb9a3 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge14k9v1bk1wwew8ua83|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge14k9v1bk1wwew8ua83|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 15:46:23 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 15:46:23 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 15:46:23 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 15:46:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:46:23 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:46:23 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 15:46:23 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 15:46:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:46:23 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:46:23 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 15:46:23 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 15:46:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:46:23 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:46:23 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 15:46:23 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 15:46:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:46:23 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:46:23 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 15:46:23 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 15:46:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:46:23 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:46:23 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 15:46:23 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 15:46:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:46:23 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:46:23 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 15:46:23 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 15:46:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:46:23 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 15:46:23 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 15:46:23 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 15:46:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:46:23 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 15:46:23 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 15:46:23 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 15:46:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:46:23 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 15:46:23 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 15:46:23 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 15:46:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:46:23 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:46:23 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 15:46:23 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 15:46:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:46:23 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:46:23 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 15:46:23 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 15:46:23 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:46:23 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:46:23 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2018-05-29 15:47:41 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-29 15:47:41 INFO  Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+2018-05-29 15:47:41 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-29 15:47:41 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-29 15:47:41 INFO  Configuration:2073 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-05-29 15:47:41 INFO  Configuration:2092 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-05-29 15:47:41 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-05-29 15:47:41 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-29 15:47:41 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+2018-05-29 15:47:42 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/chouhan_rugs
+2018-05-29 15:47:42 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=blagotco_shop, password=****}
+2018-05-29 15:47:42 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-29 15:47:42 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-29 15:47:42 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-29 15:47:42 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-05-29 15:47:42 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-29 15:47:42 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-29 15:47:42 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-29 15:47:43 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2018-05-29 15:47:43 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2018-05-29 15:47:43 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@142edf3a [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@1f0657aa [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge14k9v1bk3mqshl7qt5|1edcf1, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@c62402e4 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge14k9v1bk3mqshl7qt5|1d5872c, jdbcUrl -> jdbc:mysql://localhost:3306/chouhan_rugs, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge14k9v1bk3mqshl7qt5|92d9cc, numHelperThreads -> 3 ]
+2018-05-29 15:47:44 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2018-05-29 15:47:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.item_details
+2018-05-29 15:47:44 INFO  TableMetadata:67 - HHH000037: Columns: [gid, visible, company_id, orderid, mrp, pid, pmid, smrp, ppid, confirm, uid, qty, location, id, pkey, status]
+2018-05-29 15:47:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:47:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:47:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu1
+2018-05-29 15:47:44 INFO  TableMetadata:67 - HHH000037: Columns: [menu, m1id, status]
+2018-05-29 15:47:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:47:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:47:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu2
+2018-05-29 15:47:44 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, submenu, m1id, status]
+2018-05-29 15:47:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:47:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:47:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.menu3
+2018-05-29 15:47:44 INFO  TableMetadata:67 - HHH000037: Columns: [m2id, m3id, submenu, specification, status]
+2018-05-29 15:47:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:47:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:47:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.order_details
+2018-05-29 15:47:44 INFO  TableMetadata:67 - HHH000037: Columns: [confirm, uid, other, total, cdate, visible, orderid, taxandcharge, id, status]
+2018-05-29 15:47:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:47:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:47:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.payment_details
+2018-05-29 15:47:44 INFO  TableMetadata:67 - HHH000037: Columns: [datetime, visible, gatewaycode, orderid, trasaction_code, blagotcode, txid, id, status]
+2018-05-29 15:47:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:47:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:47:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product
+2018-05-29 15:47:44 INFO  TableMetadata:67 - HHH000037: Columns: [visible, length, weight, pid, title, m1id, uid, m2id, cdate, m3id, width, pkey, udate, height, status]
+2018-05-29 15:47:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:47:44 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_qka6vxqdy1dprtqnx9trdd47c, primary]
+2018-05-29 15:47:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.product_detail
+2018-05-29 15:47:44 INFO  TableMetadata:67 - HHH000037: Columns: [visible, color, count, description, mrp, smrp, url, uid, cdate, size, pdid, pkey, udate, status]
+2018-05-29 15:47:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:47:44 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_b9rna3hopmfk08hwsrt62p0c1, uk_aljcwg7c9iunxvj1xeel0envt, primary]
+2018-05-29 15:47:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.registration
+2018-05-29 15:47:44 INFO  TableMetadata:67 - HHH000037: Columns: [pincode, access, address, pswd, city, mobile, url, uid, street, name, state, authorize, email, username]
+2018-05-29 15:47:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:47:44 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_fw6boggmkktje4afntwpnqgul, uk_pqp6404l2ndskpsr1xx8eaa68, primary]
+2018-05-29 15:47:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.shipping
+2018-05-29 15:47:44 INFO  TableMetadata:67 - HHH000037: Columns: [uid, smobile, orderid, spincode, sname, sstate, saddress2, saddress1, id, scity]
+2018-05-29 15:47:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:47:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:47:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.slide_control
+2018-05-29 15:47:44 INFO  TableMetadata:67 - HHH000037: Columns: [field, name, id]
+2018-05-29 15:47:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:47:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:47:44 INFO  TableMetadata:66 - HHH000261: Table found: chouhan_rugs.updateaccount
+2018-05-29 15:47:44 INFO  TableMetadata:67 - HHH000037: Columns: [uid, code, createdate, comment, id, status]
+2018-05-29 15:47:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2018-05-29 15:47:44 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2018-05-29 15:47:44 INFO  SchemaUpdate:242 - HHH000232: Schema update complete

@@ -166,15 +166,15 @@
 													<c:set var="totalValue"
 														value="${totalValue=totalValue+num.smrp*num.qty}" />
 												<c:if test="${totalValue gt free}">
-												<td>&#8377;0</td>
+												<td>&#x24;0</td>
 													<td>${num.smrp*num.qty}</td>
 												</c:if>
 												<c:if test="${totalValue eq free}">
-												<td>&#8377;0</td>
-													<td><strong>&#8377;Free shipping</strong></td>
+												<td>&#x24&#x24;0</td>
+													<td><strong>&#x24;Free shipping</strong></td>
 												</c:if>
 												<c:if test="${totalValue le free}">
-												<td>&#8377;${courier}</td>
+												<td>&#x24;${courier}</td>
 												<td>${num.smrp*num.qty+courier*num.qty}</td>
 												</c:if>
 												</tr>
@@ -184,19 +184,19 @@
 												<td class="align-right" colspan="4"><span
 													class="price big">Total</span></td>
 												<c:if test="${totalValue gt free}">
-													<td><strong>&#8377;${totalValue}</strong></td>
-													<td><strong>&#8377;Free shipping</strong></td>
-													<td>&#8377;${totalValue}</td>
+													<td><strong>&#x24;${totalValue}</strong></td>
+													<td><strong>&#x24;Free shipping</strong></td>
+													<td>&#x24;${totalValue}</td>
 												</c:if>
 												<c:if test="${totalValue eq free}">
-													<td><strong>&#8377;${totalValue}</strong></td>
-													<td><strong>&#8377;Free shipping</strong></td>
-													<td>&#8377;${totalValue}</td>
+													<td><strong>&#x24;${totalValue}</strong></td>
+													<td><strong>&#x24;Free shipping</strong></td>
+													<td>&#x24;${totalValue}</td>
 												</c:if>
 												<c:if test="${totalValue le free}">
-													<td><strong>&#8377;${totalValue}</strong></td>
-													<td><strong>&#8377;${sValue*courier}</strong></td>
-													<td>&#8377;${totalValue+sValue*courier}</td>
+													<td><strong>&#x24;${totalValue}</strong></td>
+													<td><strong>&#x24;${sValue*courier}</strong></td>
+													<td>&#x24;${totalValue+sValue*courier}</td>
 												</c:if>
 											</tr>
 										</tbody>

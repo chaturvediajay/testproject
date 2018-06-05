@@ -17,10 +17,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.cart.OrderInit;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+import com.html.ErrorHtml;
 import com.json.JqueryDataTable;
 import com.logic.DTProductList;
 import com.logic.ProductLogic;
 import com.logic.RegLogic;
+import com.model.CartModel;
 import com.model.LoginSession;
 import com.model.Product;
 import com.model.ShippingModel;
@@ -166,9 +168,11 @@ public class JqueryController {
 			switch (cate) {
 			case "retrive":
 				if (metod.equals("jq")) {
-					jsonElement = gson.toJsonTree(CartSession.getCartSession(request));
+					List<CartModel> lcm=CartSession.getCartSession(request);
+					jsonElement = gson.toJsonTree(lcm);
+					obj.put("size", lcm.size());
+					obj.put("html", ErrorHtml.errorGet404(request));
 					obj.put("data", jsonElement);
-					
 				}
 				obj.put("url", "no");
 				obj.put("res", true);
